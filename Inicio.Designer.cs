@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            groupBox1 = new GroupBox();
+            SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(1, 2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(818, 79);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
+            // Inicio
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(0, 0, 35);
+            ClientSize = new Size(800, 749);
+            Controls.Add(groupBox1);
+            ForeColor = Color.FromArgb(0, 0, 64);
+            Name = "Inicio";
+            Text = "pagina de inicio";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private GroupBox groupBox1;
     }
 }
