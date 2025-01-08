@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GoldenBoots
 {
-    public partial class Form3 : Form
+    public partial class Carrito : Form
     {
-        public Form3()
+        public Carrito()
         {
             InitializeComponent();
         }
