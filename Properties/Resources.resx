@@ -121,11 +121,11 @@
   <data name="za16f" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za16f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="encabezado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\encabezado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="za15f" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za15f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="encabezado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\encabezado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,6 +202,9 @@
   <data name="za10f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za10f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="za18f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\za18f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="za1f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za1f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,14 +220,14 @@
   <data name="za9f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za9f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="za21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\za21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="za16f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za16f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="encabezado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\encabezado2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="za14f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\za14f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,8 +253,8 @@
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="za14f" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\za14f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="za21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\za21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="za5f" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za5f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,13 +265,13 @@
   <data name="za5f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za5f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="encabezado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\encabezado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="encabezado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\encabezado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="za12f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za12f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="za18f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\za18f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
