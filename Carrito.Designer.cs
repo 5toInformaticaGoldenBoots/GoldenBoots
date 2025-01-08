@@ -51,12 +51,9 @@
             textBox2 = new TextBox();
             button3 = new Button();
             label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
             label13 = new Label();
             label14 = new Label();
             pictureBox3 = new PictureBox();
-            label15 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -250,7 +247,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(70, 54);
             textBox1.TabIndex = 20;
-            textBox1.TextChanged += this.textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -280,26 +276,6 @@
             label10.TabIndex = 23;
             label10.Text = "_______________________________________________________________________________________________________________________________________\r\n\r\n\r\n";
             // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = SystemColors.AppWorkspace;
-            label11.Location = new Point(32, 659);
-            label11.Name = "label11";
-            label11.Size = new Size(957, 75);
-            label11.TabIndex = 24;
-            label11.Text = "_______________________________________________________________________________________________________________________________________\r\n\r\n\r\n";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(100, 596);
-            label12.Name = "label12";
-            label12.Size = new Size(69, 25);
-            label12.TabIndex = 25;
-            label12.Text = "label12";
-            // 
             // label13
             // 
             label13.AutoSize = true;
@@ -328,27 +304,15 @@
             pictureBox3.TabIndex = 28;
             pictureBox3.TabStop = false;
             // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(363, 609);
-            label15.Name = "label15";
-            label15.Size = new Size(105, 25);
-            label15.TabIndex = 29;
-            label15.Text = "RD$ 250.00";
-            // 
             // Carrito
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HighlightText;
             ClientSize = new Size(1051, 696);
-            Controls.Add(label15);
             Controls.Add(pictureBox3);
             Controls.Add(label14);
             Controls.Add(label13);
-            Controls.Add(label12);
-            Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(button3);
             Controls.Add(textBox2);
@@ -404,11 +368,8 @@
         private TextBox textBox2;
         private Button button3;
         private Label label10;
-        private Label label11;
-        private Label label12;
         private Label label13;
         private Label label14;
         private PictureBox pictureBox3;
-        private Label label15;
     }
 }
