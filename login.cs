@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,12 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
->>>>>>> Stashed changes
 namespace GoldenBoots
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
