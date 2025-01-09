@@ -54,6 +54,13 @@
             label13 = new Label();
             label14 = new Label();
             pictureBox3 = new PictureBox();
+            label11 = new Label();
+            label12 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            button7 = new Button();
+            button10 = new Button();
+            textBox3 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -62,7 +69,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(64, 411);
+            pictureBox1.Location = new Point(37, 411);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(91, 83);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -72,7 +79,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.th__2_;
-            pictureBox2.Location = new Point(59, 219);
+            pictureBox2.Location = new Point(32, 219);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(96, 81);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -139,7 +146,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(400, 232);
+            button1.Location = new Point(389, 232);
             button1.Name = "button1";
             button1.Size = new Size(68, 51);
             button1.TabIndex = 8;
@@ -150,7 +157,7 @@
             // 
             button2.BackColor = SystemColors.ControlText;
             button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(526, 230);
+            button2.Location = new Point(500, 230);
             button2.Name = "button2";
             button2.Size = new Size(66, 54);
             button2.TabIndex = 9;
@@ -159,7 +166,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(400, 411);
+            button4.Location = new Point(389, 411);
             button4.Name = "button4";
             button4.Size = new Size(68, 54);
             button4.TabIndex = 11;
@@ -170,9 +177,9 @@
             // 
             button5.BackColor = SystemColors.ControlText;
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(647, 229);
+            button5.Location = new Point(619, 229);
             button5.Name = "button5";
-            button5.Size = new Size(66, 54);
+            button5.Size = new Size(66, 55);
             button5.TabIndex = 12;
             button5.Text = "-";
             button5.UseVisualStyleBackColor = false;
@@ -181,9 +188,9 @@
             // 
             button6.BackColor = SystemColors.ControlText;
             button6.ForeColor = SystemColors.ButtonHighlight;
-            button6.Location = new Point(526, 411);
+            button6.Location = new Point(500, 403);
             button6.Name = "button6";
-            button6.Size = new Size(66, 54);
+            button6.Size = new Size(66, 60);
             button6.TabIndex = 13;
             button6.Text = "+";
             button6.UseVisualStyleBackColor = false;
@@ -192,9 +199,9 @@
             // 
             button8.BackColor = SystemColors.ControlText;
             button8.ForeColor = SystemColors.ButtonHighlight;
-            button8.Location = new Point(647, 408);
+            button8.Location = new Point(619, 399);
             button8.Name = "button8";
-            button8.Size = new Size(66, 54);
+            button8.Size = new Size(66, 64);
             button8.TabIndex = 15;
             button8.Text = "-";
             button8.UseVisualStyleBackColor = false;
@@ -242,7 +249,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(586, 408);
+            textBox1.Location = new Point(555, 405);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(70, 54);
@@ -250,7 +257,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(586, 230);
+            textBox2.Location = new Point(555, 229);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(70, 54);
@@ -270,7 +277,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = SystemColors.ActiveCaptionText;
-            label10.Location = new Point(43, 534);
+            label10.Location = new Point(32, 508);
             label10.Name = "label10";
             label10.Size = new Size(957, 75);
             label10.TabIndex = 23;
@@ -304,12 +311,87 @@
             pictureBox3.TabIndex = 28;
             pictureBox3.TabStop = false;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(134, 216);
+            label11.Name = "label11";
+            label11.Size = new Size(213, 25);
+            label11.TabIndex = 29;
+            label11.Text = "Tacones Rojos Elegantes\r\n";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(134, 241);
+            label12.Name = "label12";
+            label12.Size = new Size(209, 25);
+            label12.TabIndex = 30;
+            label12.Text = "Codigo de zapatos #003";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.Location = new Point(134, 418);
+            label15.Name = "label15";
+            label15.Size = new Size(188, 25);
+            label15.TabIndex = 31;
+            label15.Text = "Tacones louis vuitton";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(134, 443);
+            label16.Name = "label16";
+            label16.Size = new Size(209, 25);
+            label16.TabIndex = 32;
+            label16.Text = "Codigo de zapatos #009";
+            // 
+            // button7
+            // 
+            button7.BackColor = SystemColors.ControlText;
+            button7.ForeColor = SystemColors.ButtonHighlight;
+            button7.Location = new Point(37, 586);
+            button7.Name = "button7";
+            button7.Size = new Size(112, 48);
+            button7.TabIndex = 33;
+            button7.Text = "Total";
+            button7.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            button10.BackColor = SystemColors.ActiveCaptionText;
+            button10.ForeColor = SystemColors.ButtonHighlight;
+            button10.Location = new Point(809, 586);
+            button10.Name = "button10";
+            button10.Size = new Size(112, 48);
+            button10.TabIndex = 34;
+            button10.Text = "Comprar";
+            button10.UseVisualStyleBackColor = false;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(155, 586);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(279, 46);
+            textBox3.TabIndex = 35;
+            // 
             // Carrito
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.HighlightText;
-            ClientSize = new Size(1051, 696);
+            BackColor = SystemColors.ControlLightLight;
+            ClientSize = new Size(1051, 733);
+            Controls.Add(textBox3);
+            Controls.Add(button10);
+            Controls.Add(button7);
+            Controls.Add(label16);
+            Controls.Add(label15);
+            Controls.Add(label12);
+            Controls.Add(label11);
             Controls.Add(pictureBox3);
             Controls.Add(label14);
             Controls.Add(label13);
@@ -371,5 +453,12 @@
         private Label label13;
         private Label label14;
         private PictureBox pictureBox3;
+        private Label label11;
+        private Label label12;
+        private Label label15;
+        private Label label16;
+        private Button button7;
+        private Button button10;
+        private TextBox textBox3;
     }
 }
