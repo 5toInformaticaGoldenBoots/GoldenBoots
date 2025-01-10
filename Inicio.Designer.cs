@@ -1,4 +1,4 @@
-﻿namespace GoldenBoots
+namespace GoldenBoots
 {
     partial class Inicio
     {
@@ -386,5 +386,6 @@
         private Label label17;
         private Label label18;
         private Label label16;
+
     }
 }
