@@ -1,6 +1,6 @@
 ﻿namespace GoldenBoots
 {
-    partial class Inicio
+    partial class sobre_nosotros
     {
         /// <summary>
         ///  Required designer variable.
@@ -92,7 +92,6 @@
             label1.Size = new Size(191, 17);
             label1.TabIndex = 5;
             label1.Text = "Conoce #GoldenBootsCrew";
-            label1.Click += label1_Click;
             // 
             // label2
             // 

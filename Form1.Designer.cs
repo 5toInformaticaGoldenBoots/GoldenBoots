@@ -1,24 +1,29 @@
-﻿namespace GoldenBoots
+﻿using System.ComponentModel;
+
+namespace GoldenBoots
 {
     partial class Form1
     {
-        /// <summary>
-<<<<<<< Updated upstream
-        ///  Required designer variable.
-=======
-        /// Required designer variable.
->>>>>>> Stashed changes
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private Container components;
 
-        /// <summary>
+        /* <summary>
 <<<<<<< Updated upstream
-        ///  Clean up any resources being used.
+///  Required designer variable.
 =======
-        /// Clean up any resources being used.
+/// Required designer variable.
 >>>>>>> Stashed changes
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+/// </summary>
+private System.ComponentModel.IContainer components = null;
+
+/// <summary>
+<<<<<<< Updated upstream
+///  Clean up any resources being used.
+=======
+/// Clean up any resources being used.
+>>>>>>> Stashed changes
+/// </summary>
+/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+*/
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -30,7 +35,7 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
+        /* <summary>
 <<<<<<< Updated upstream
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
@@ -39,6 +44,7 @@
         /// the contents of this method with the code editor.
 >>>>>>> Stashed changes
         /// </summary>
+        /// */
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -49,8 +55,8 @@
 
         #endregion
     }
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
+//=======
+
+//>>>>>>> Stashed changes
