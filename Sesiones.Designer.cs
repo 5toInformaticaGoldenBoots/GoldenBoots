@@ -1,4 +1,4 @@
-namespace GoldenBoots
+﻿namespace GoldenBoots
 {
     partial class Sesiones
     {
@@ -231,6 +231,5 @@ namespace GoldenBoots
         private Label label5;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-
     }
 }

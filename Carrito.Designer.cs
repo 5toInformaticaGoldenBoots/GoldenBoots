@@ -60,8 +60,8 @@
             label16 = new Label();
             button7 = new Button();
             button10 = new Button();
-            textBox3 = new TextBox();
             button11 = new Button();
+            textBox3 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -372,14 +372,6 @@
             button10.Text = "Comprar";
             button10.UseVisualStyleBackColor = false;
             // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(155, 586);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(279, 46);
-            textBox3.TabIndex = 35;
-            // 
             // button11
             // 
             button11.Location = new Point(0, 1);
@@ -389,14 +381,22 @@
             button11.Text = "x";
             button11.UseVisualStyleBackColor = true;
             // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(134, 586);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(191, 48);
+            textBox3.TabIndex = 37;
+            // 
             // Carrito
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(1051, 733);
-            Controls.Add(button11);
             Controls.Add(textBox3);
+            Controls.Add(button11);
             Controls.Add(button10);
             Controls.Add(button7);
             Controls.Add(label16);
@@ -470,7 +470,7 @@
         private Label label16;
         private Button button7;
         private Button button10;
-        private TextBox textBox3;
         private Button button11;
+        private TextBox textBox3;
     }
 }
