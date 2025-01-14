@@ -79,7 +79,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.th__2_;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(32, 219);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(96, 81);
@@ -318,9 +318,9 @@
             label11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.Location = new Point(134, 216);
             label11.Name = "label11";
-            label11.Size = new Size(213, 25);
+            label11.Size = new Size(164, 50);
             label11.TabIndex = 29;
-            label11.Text = "Tacones Rojos Elegantes\r\n";
+            label11.Text = "Zapatos elegantes\r\n\r\n";
             // 
             // label12
             // 
@@ -337,9 +337,9 @@
             label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label15.Location = new Point(134, 418);
             label15.Name = "label15";
-            label15.Size = new Size(188, 25);
+            label15.Size = new Size(157, 25);
             label15.TabIndex = 31;
-            label15.Text = "Tacones louis vuitton";
+            label15.Text = "Tacones amarillos\r\n";
             // 
             // label16
             // 
