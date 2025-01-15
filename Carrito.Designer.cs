@@ -298,9 +298,9 @@
             label14.AutoSize = true;
             label14.Location = new Point(886, 423);
             label14.Name = "label14";
-            label14.Size = new Size(119, 25);
+            label14.Size = new Size(91, 25);
             label14.TabIndex = 27;
-            label14.Text = "RD$ 5,000.00";
+            label14.Text = "RD$ 1445";
             // 
             // pictureBox3
             // 
@@ -337,9 +337,9 @@
             label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label15.Location = new Point(134, 418);
             label15.Name = "label15";
-            label15.Size = new Size(157, 25);
+            label15.Size = new Size(193, 50);
             label15.TabIndex = 31;
-            label15.Text = "Tacones amarillos\r\n";
+            label15.Text = "Sandalias para damas \r\n\r\n";
             // 
             // label16
             // 
