@@ -1,6 +1,6 @@
 ﻿namespace GoldenBoots
 {
-    partial class Form2
+    partial class Registro
     {
         /// <summary>
         /// Required designer variable.
