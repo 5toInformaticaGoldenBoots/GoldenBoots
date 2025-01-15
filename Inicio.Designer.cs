@@ -53,6 +53,7 @@
             inicio123 = new PictureBox();
             label17 = new Label();
             label18 = new Label();
+            label8 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)lupa12).BeginInit();
@@ -83,6 +84,7 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Top;
+            panel1.Font = new Font("Symbol", 9F, FontStyle.Bold, GraphicsUnit.Point, 2);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1284, 207);
@@ -268,6 +270,7 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(label8);
             panel2.Controls.Add(lupa12);
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(like1);
@@ -350,6 +353,16 @@
             label18.Text = "Encuentra el par perfecto para cada paso de tu vida";
             label18.Click += label18_Click;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(32, 21);
+            label8.Name = "label8";
+            label8.Size = new Size(161, 28);
+            label8.TabIndex = 4;
+            label8.Text = "GooldentBoots";
+            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -404,5 +417,6 @@
         private LinkLabel linkLabel2;
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel5;
+        private Label label8;
     }
 }
