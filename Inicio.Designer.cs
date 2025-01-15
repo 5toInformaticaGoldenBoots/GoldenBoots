@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            linkLabel5 = new LinkLabel();
+            linkLabel4 = new LinkLabel();
+            linkLabel3 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
+            linkLabel1 = new LinkLabel();
             label15 = new Label();
-            label14 = new Label();
             label9 = new Label();
             label13 = new Label();
-            label12 = new Label();
             label11 = new Label();
-            label10 = new Label();
-            label8 = new Label();
             label7 = new Label();
             label6 = new Label();
             label3 = new Label();
@@ -45,34 +46,34 @@
             label4 = new Label();
             label1 = new Label();
             panel2 = new Panel();
-            pictureBox3 = new PictureBox();
+            lupa12 = new PictureBox();
             textBox1 = new TextBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            like1 = new PictureBox();
+            carro3 = new PictureBox();
+            inicio123 = new PictureBox();
             label17 = new Label();
             label18 = new Label();
-            label16 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lupa12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)like1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)carro3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)inicio123).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.AutoScroll = true;
             panel1.BackColor = Color.WhiteSmoke;
-            panel1.Controls.Add(label16);
+            panel1.Controls.Add(linkLabel5);
+            panel1.Controls.Add(linkLabel4);
+            panel1.Controls.Add(linkLabel3);
+            panel1.Controls.Add(linkLabel2);
+            panel1.Controls.Add(linkLabel1);
             panel1.Controls.Add(label15);
-            panel1.Controls.Add(label14);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label13);
-            panel1.Controls.Add(label12);
             panel1.Controls.Add(label11);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(label8);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label3);
@@ -88,6 +89,71 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
+            // linkLabel5
+            // 
+            linkLabel5.AutoSize = true;
+            linkLabel5.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel5.LinkColor = Color.Black;
+            linkLabel5.Location = new Point(830, 158);
+            linkLabel5.Name = "linkLabel5";
+            linkLabel5.Size = new Size(98, 18);
+            linkLabel5.TabIndex = 18;
+            linkLabel5.TabStop = true;
+            linkLabel5.Text = "Novedades";
+            linkLabel5.LinkClicked += linkLabel5_LinkClicked;
+            // 
+            // linkLabel4
+            // 
+            linkLabel4.AutoSize = true;
+            linkLabel4.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel4.LinkColor = Color.Black;
+            linkLabel4.Location = new Point(699, 158);
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.Size = new Size(53, 18);
+            linkLabel4.TabIndex = 17;
+            linkLabel4.TabStop = true;
+            linkLabel4.Text = "Niñas";
+            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
+            // 
+            // linkLabel3
+            // 
+            linkLabel3.AutoSize = true;
+            linkLabel3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel3.LinkColor = Color.Black;
+            linkLabel3.Location = new Point(568, 160);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(53, 18);
+            linkLabel3.TabIndex = 16;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "Niños";
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel2.LinkColor = Color.Black;
+            linkLabel2.Location = new Point(454, 158);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(52, 18);
+            linkLabel2.TabIndex = 15;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Mujer";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked_1;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.LinkColor = Color.Black;
+            linkLabel1.Location = new Point(318, 158);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(71, 18);
+            linkLabel1.TabIndex = 14;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Hombre";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
             // label15
             // 
             label15.AutoSize = true;
@@ -97,16 +163,6 @@
             label15.Size = new Size(16, 21);
             label15.TabIndex = 12;
             label15.Text = "/";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(832, 158);
-            label14.Name = "label14";
-            label14.Size = new Size(87, 20);
-            label14.TabIndex = 11;
-            label14.Text = "Novedades";
             // 
             // label9
             // 
@@ -128,16 +184,6 @@
             label13.TabIndex = 10;
             label13.Text = "/";
             // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(574, 157);
-            label12.Name = "label12";
-            label12.Size = new Size(43, 20);
-            label12.TabIndex = 9;
-            label12.Text = "Niño";
-            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -147,26 +193,6 @@
             label11.Size = new Size(16, 21);
             label11.TabIndex = 8;
             label11.Text = "/";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(454, 157);
-            label10.Name = "label10";
-            label10.Size = new Size(50, 20);
-            label10.TabIndex = 7;
-            label10.Text = "Mujer";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(328, 158);
-            label8.Name = "label8";
-            label8.Size = new Size(66, 20);
-            label8.TabIndex = 5;
-            label8.Text = "Hombre";
             // 
             // label7
             // 
@@ -242,24 +268,24 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Controls.Add(pictureBox3);
+            panel2.Controls.Add(lupa12);
             panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(like1);
+            panel2.Controls.Add(carro3);
             panel2.Location = new Point(0, 60);
             panel2.Name = "panel2";
             panel2.Size = new Size(1281, 69);
             panel2.TabIndex = 0;
             // 
-            // pictureBox3
+            // lupa12
             // 
-            pictureBox3.Image = Properties.Resources.lupa;
-            pictureBox3.Location = new Point(944, 21);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(41, 32);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
+            lupa12.Image = Properties.Resources.lupa;
+            lupa12.Location = new Point(944, 21);
+            lupa12.Name = "lupa12";
+            lupa12.Size = new Size(41, 32);
+            lupa12.SizeMode = PictureBoxSizeMode.Zoom;
+            lupa12.TabIndex = 3;
+            lupa12.TabStop = false;
             // 
             // textBox1
             // 
@@ -269,36 +295,38 @@
             textBox1.Size = new Size(163, 29);
             textBox1.TabIndex = 2;
             // 
-            // pictureBox2
+            // like1
             // 
-            pictureBox2.Image = Properties.Resources.like;
-            pictureBox2.Location = new Point(1160, 16);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(45, 34);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            like1.Image = Properties.Resources.like;
+            like1.Location = new Point(1160, 16);
+            like1.Name = "like1";
+            like1.Size = new Size(45, 34);
+            like1.SizeMode = PictureBoxSizeMode.Zoom;
+            like1.TabIndex = 1;
+            like1.TabStop = false;
             // 
-            // pictureBox1
+            // carro3
             // 
-            pictureBox1.Image = Properties.Resources.carrito;
-            pictureBox1.Location = new Point(1211, 16);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(37, 34);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            carro3.Image = Properties.Resources.carrito;
+            carro3.Location = new Point(1211, 16);
+            carro3.Name = "carro3";
+            carro3.Size = new Size(37, 34);
+            carro3.SizeMode = PictureBoxSizeMode.Zoom;
+            carro3.TabIndex = 0;
+            carro3.TabStop = false;
             // 
-            // pictureBox4
+            // inicio123
             // 
-            pictureBox4.ErrorImage = Properties.Resources.img_inicial;
-            pictureBox4.Image = Properties.Resources.img_inicial;
-            pictureBox4.Location = new Point(0, 205);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(1284, 386);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 1;
-            pictureBox4.TabStop = false;
+            inicio123.BackColor = Color.Transparent;
+            inicio123.ErrorImage = Properties.Resources.img_inicial;
+            inicio123.Image = Properties.Resources.img_inicial;
+            inicio123.InitialImage = Properties.Resources.img_inicial;
+            inicio123.Location = new Point(0, 205);
+            inicio123.Name = "inicio123";
+            inicio123.Size = new Size(1284, 386);
+            inicio123.TabIndex = 1;
+            inicio123.TabStop = false;
+            inicio123.Click += pictureBox4_Click;
             // 
             // label17
             // 
@@ -322,16 +350,6 @@
             label18.Text = "Encuentra el par perfecto para cada paso de tu vida";
             label18.Click += label18_Click;
             // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Location = new Point(699, 158);
-            label16.Name = "label16";
-            label16.Size = new Size(42, 20);
-            label16.TabIndex = 13;
-            label16.Text = "Niña";
-            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -339,7 +357,7 @@
             AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(1284, 749);
-            Controls.Add(pictureBox4);
+            Controls.Add(inicio123);
             Controls.Add(label18);
             Controls.Add(label17);
             Controls.Add(panel1);
@@ -351,10 +369,10 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lupa12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)like1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)carro3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)inicio123).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -370,21 +388,21 @@
         private Label label5;
         private Label label4;
         private Label label7;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
-        private Label label14;
+        private PictureBox like1;
+        private PictureBox carro3;
         private Label label9;
         private Label label13;
-        private Label label12;
         private Label label11;
-        private Label label10;
-        private Label label8;
-        private PictureBox pictureBox3;
+        private PictureBox lupa12;
         private TextBox textBox1;
         private Label label15;
-        private PictureBox pictureBox4;
         private Label label17;
         private Label label18;
-        private Label label16;
+        public PictureBox inicio123;
+        private LinkLabel linkLabel4;
+        private LinkLabel linkLabel3;
+        private LinkLabel linkLabel2;
+        private LinkLabel linkLabel1;
+        private LinkLabel linkLabel5;
     }
 }

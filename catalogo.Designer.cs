@@ -30,40 +30,44 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(catalogo));
             label31 = new Label();
-            label32 = new Label();
-            label35 = new Label();
-            label33 = new Label();
-            label36 = new Label();
-            label34 = new Label();
             panel1 = new Panel();
+            linkLabel5 = new LinkLabel();
+            linkLabel4 = new LinkLabel();
+            linkLabel3 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
+            linkLabel1 = new LinkLabel();
+            label46 = new Label();
+            label47 = new Label();
+            label48 = new Label();
+            label49 = new Label();
             groupBox4 = new GroupBox();
             label14 = new Label();
             label13 = new Label();
             label12 = new Label();
-            pictureBox4 = new PictureBox();
+            za4 = new PictureBox();
             label11 = new Label();
             label10 = new Label();
             label9 = new Label();
             groupBox3 = new GroupBox();
-            pictureBox3 = new PictureBox();
+            za3 = new PictureBox();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
             groupBox2 = new GroupBox();
-            pictureBox2 = new PictureBox();
+            za2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
+            za1 = new PictureBox();
             groupBox1 = new GroupBox();
             groupBox10 = new GroupBox();
             label41 = new Label();
             label42 = new Label();
             label43 = new Label();
-            pictureBox10 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            za5 = new PictureBox();
+            za6 = new PictureBox();
             groupBox8 = new GroupBox();
             label18 = new Label();
             label17 = new Label();
@@ -74,47 +78,45 @@
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
-            pictureBox6 = new PictureBox();
+            za7 = new PictureBox();
             groupBox6 = new GroupBox();
             label26 = new Label();
             label25 = new Label();
             label24 = new Label();
             label23 = new Label();
-            pictureBox7 = new PictureBox();
+            za8 = new PictureBox();
             groupBox7 = new GroupBox();
             label30 = new Label();
             label29 = new Label();
             label28 = new Label();
             label27 = new Label();
-            pictureBox8 = new PictureBox();
+            za9 = new PictureBox();
             label37 = new Label();
             label38 = new Label();
             label39 = new Label();
             label40 = new Label();
-            pictureBox9 = new PictureBox();
+            za10 = new PictureBox();
             groupBox9 = new GroupBox();
-            label44 = new Label();
-            label45 = new Label();
             panel1.SuspendLayout();
             groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za4).BeginInit();
             groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za3).BeginInit();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za6).BeginInit();
             groupBox8.SuspendLayout();
             groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za7).BeginInit();
             groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za8).BeginInit();
             groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)za10).BeginInit();
             groupBox9.SuspendLayout();
             SuspendLayout();
             // 
@@ -128,80 +130,145 @@
             label31.TabIndex = 11;
             label31.Text = "\"Explora nuevos horizontes con cada paso: encuentra el par de zapatos que te acompañará en cada aventura.\"";
             // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.BackColor = Color.Black;
-            label32.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label32.ForeColor = Color.White;
-            label32.Location = new Point(615, 33);
-            label32.Name = "label32";
-            label32.Size = new Size(16, 21);
-            label32.TabIndex = 12;
-            label32.Text = "/";
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.BackColor = Color.Black;
-            label35.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label35.ForeColor = Color.White;
-            label35.Location = new Point(653, 35);
-            label35.Name = "label35";
-            label35.Size = new Size(50, 20);
-            label35.TabIndex = 13;
-            label35.Text = "Mujer";
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.BackColor = Color.Black;
-            label33.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label33.ForeColor = Color.White;
-            label33.Location = new Point(773, 35);
-            label33.Name = "label33";
-            label33.Size = new Size(43, 20);
-            label33.TabIndex = 15;
-            label33.Text = "Niño";
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.BackColor = Color.Black;
-            label36.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label36.ForeColor = Color.White;
-            label36.Location = new Point(527, 36);
-            label36.Name = "label36";
-            label36.Size = new Size(66, 20);
-            label36.TabIndex = 11;
-            label36.Text = "Hombre";
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.BackColor = Color.Black;
-            label34.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label34.ForeColor = Color.White;
-            label34.Location = new Point(729, 35);
-            label34.Name = "label34";
-            label34.Size = new Size(16, 21);
-            label34.TabIndex = 14;
-            label34.Text = "/";
-            // 
             // panel1
             // 
             panel1.BackColor = Color.Black;
-            panel1.Controls.Add(label45);
-            panel1.Controls.Add(label44);
-            panel1.Controls.Add(label32);
-            panel1.Controls.Add(label35);
-            panel1.Controls.Add(label33);
-            panel1.Controls.Add(label36);
-            panel1.Controls.Add(label34);
+            panel1.Controls.Add(linkLabel5);
+            panel1.Controls.Add(linkLabel4);
+            panel1.Controls.Add(linkLabel3);
+            panel1.Controls.Add(linkLabel2);
+            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(label46);
+            panel1.Controls.Add(label47);
+            panel1.Controls.Add(label48);
+            panel1.Controls.Add(label49);
             panel1.Location = new Point(-92, 78);
             panel1.Name = "panel1";
             panel1.Size = new Size(1324, 84);
             panel1.TabIndex = 12;
+            // 
+            // linkLabel5
+            // 
+            linkLabel5.AutoSize = true;
+            linkLabel5.BackColor = Color.Transparent;
+            linkLabel5.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel5.ForeColor = Color.White;
+            linkLabel5.LinkColor = Color.White;
+            linkLabel5.Location = new Point(866, 35);
+            linkLabel5.Name = "linkLabel5";
+            linkLabel5.Size = new Size(51, 18);
+            linkLabel5.TabIndex = 27;
+            linkLabel5.TabStop = true;
+            linkLabel5.Text = "Inicio";
+            linkLabel5.LinkClicked += linkLabel5_LinkClicked;
+            // 
+            // linkLabel4
+            // 
+            linkLabel4.AutoSize = true;
+            linkLabel4.BackColor = Color.Transparent;
+            linkLabel4.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel4.ForeColor = Color.White;
+            linkLabel4.LinkColor = Color.White;
+            linkLabel4.Location = new Point(735, 35);
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.Size = new Size(53, 18);
+            linkLabel4.TabIndex = 26;
+            linkLabel4.TabStop = true;
+            linkLabel4.Text = "Niñas";
+            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
+            // 
+            // linkLabel3
+            // 
+            linkLabel3.AutoSize = true;
+            linkLabel3.BackColor = Color.Transparent;
+            linkLabel3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel3.ForeColor = Color.White;
+            linkLabel3.LinkColor = Color.White;
+            linkLabel3.Location = new Point(604, 37);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(53, 18);
+            linkLabel3.TabIndex = 25;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "Niños";
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.BackColor = Color.Transparent;
+            linkLabel2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel2.ForeColor = Color.White;
+            linkLabel2.LinkColor = Color.White;
+            linkLabel2.Location = new Point(490, 35);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(52, 18);
+            linkLabel2.TabIndex = 24;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Mujer";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.ForeColor = Color.White;
+            linkLabel1.LinkColor = Color.White;
+            linkLabel1.Location = new Point(354, 35);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(71, 18);
+            linkLabel1.TabIndex = 23;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Hombre";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // label46
+            // 
+            label46.AutoSize = true;
+            label46.BackColor = Color.Transparent;
+            label46.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label46.ForeColor = Color.White;
+            label46.Location = new Point(821, 34);
+            label46.Name = "label46";
+            label46.Size = new Size(16, 21);
+            label46.TabIndex = 22;
+            label46.Text = "/";
+            // 
+            // label47
+            // 
+            label47.AutoSize = true;
+            label47.BackColor = Color.Transparent;
+            label47.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label47.ForeColor = Color.White;
+            label47.Location = new Point(452, 32);
+            label47.Name = "label47";
+            label47.Size = new Size(16, 21);
+            label47.TabIndex = 19;
+            label47.Text = "/";
+            // 
+            // label48
+            // 
+            label48.AutoSize = true;
+            label48.BackColor = Color.Transparent;
+            label48.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label48.ForeColor = Color.White;
+            label48.Location = new Point(693, 33);
+            label48.Name = "label48";
+            label48.Size = new Size(16, 21);
+            label48.TabIndex = 21;
+            label48.Text = "/";
+            // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.BackColor = Color.Transparent;
+            label49.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label49.ForeColor = Color.White;
+            label49.Location = new Point(566, 34);
+            label49.Name = "label49";
+            label49.Size = new Size(16, 21);
+            label49.TabIndex = 20;
+            label49.Text = "/";
             // 
             // groupBox4
             // 
@@ -209,7 +276,7 @@
             groupBox4.Controls.Add(label14);
             groupBox4.Controls.Add(label13);
             groupBox4.Controls.Add(label12);
-            groupBox4.Controls.Add(pictureBox4);
+            groupBox4.Controls.Add(za4);
             groupBox4.Location = new Point(718, 202);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(217, 253);
@@ -248,15 +315,15 @@
             label12.TabIndex = 2;
             label12.Text = "Tenis de Dama";
             // 
-            // pictureBox4
+            // za4
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(27, 26);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(168, 133);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 1;
-            pictureBox4.TabStop = false;
+            za4.Image = (Image)resources.GetObject("za4.Image");
+            za4.Location = new Point(27, 26);
+            za4.Name = "za4";
+            za4.Size = new Size(168, 133);
+            za4.SizeMode = PictureBoxSizeMode.StretchImage;
+            za4.TabIndex = 1;
+            za4.TabStop = false;
             // 
             // label11
             // 
@@ -296,7 +363,7 @@
             groupBox3.Controls.Add(label11);
             groupBox3.Controls.Add(label10);
             groupBox3.Controls.Add(label9);
-            groupBox3.Controls.Add(pictureBox3);
+            groupBox3.Controls.Add(za3);
             groupBox3.ForeColor = Color.White;
             groupBox3.Location = new Point(488, 201);
             groupBox3.Name = "groupBox3";
@@ -305,15 +372,15 @@
             groupBox3.TabStop = false;
             groupBox3.Text = ".";
             // 
-            // pictureBox3
+            // za3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(21, 26);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(168, 133);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 1;
-            pictureBox3.TabStop = false;
+            za3.Image = (Image)resources.GetObject("za3.Image");
+            za3.Location = new Point(21, 26);
+            za3.Name = "za3";
+            za3.Size = new Size(168, 133);
+            za3.SizeMode = PictureBoxSizeMode.StretchImage;
+            za3.TabIndex = 1;
+            za3.TabStop = false;
             // 
             // label8
             // 
@@ -365,7 +432,7 @@
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(pictureBox2);
+            groupBox2.Controls.Add(za2);
             groupBox2.Location = new Point(257, 201);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(213, 253);
@@ -373,15 +440,15 @@
             groupBox2.TabStop = false;
             groupBox2.Text = ".";
             // 
-            // pictureBox2
+            // za2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(20, 22);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(175, 133);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            za2.Image = (Image)resources.GetObject("za2.Image");
+            za2.Location = new Point(20, 22);
+            za2.Name = "za2";
+            za2.Size = new Size(175, 133);
+            za2.SizeMode = PictureBoxSizeMode.StretchImage;
+            za2.TabIndex = 1;
+            za2.TabStop = false;
             // 
             // label4
             // 
@@ -391,7 +458,7 @@
             label4.Name = "label4";
             label4.Size = new Size(55, 15);
             label4.TabIndex = 4;
-            label4.Text = "RD$3,000";
+            label4.Text = "RD$1,860";
             // 
             // label3
             // 
@@ -426,15 +493,16 @@
             label1.TabIndex = 1;
             label1.Text = "Zapatos elegantes ";
             // 
-            // pictureBox1
+            // za1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(23, 22);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(168, 133);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            za1.Image = (Image)resources.GetObject("za1.Image");
+            za1.Location = new Point(23, 22);
+            za1.Name = "za1";
+            za1.Size = new Size(168, 133);
+            za1.SizeMode = PictureBoxSizeMode.StretchImage;
+            za1.TabIndex = 0;
+            za1.TabStop = false;
+            za1.Click += img1_Click;
             // 
             // groupBox1
             // 
@@ -443,7 +511,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Controls.Add(za1);
             groupBox1.Location = new Point(31, 201);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(213, 253);
@@ -457,7 +525,7 @@
             groupBox10.Controls.Add(label41);
             groupBox10.Controls.Add(label42);
             groupBox10.Controls.Add(label43);
-            groupBox10.Controls.Add(pictureBox10);
+            groupBox10.Controls.Add(za5);
             groupBox10.Location = new Point(952, 201);
             groupBox10.Name = "groupBox10";
             groupBox10.Size = new Size(217, 253);
@@ -496,25 +564,25 @@
             label43.TabIndex = 2;
             label43.Text = "Bota para mujer";
             // 
-            // pictureBox10
+            // za5
             // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(24, 30);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(168, 133);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 1;
-            pictureBox10.TabStop = false;
+            za5.Image = (Image)resources.GetObject("za5.Image");
+            za5.Location = new Point(24, 30);
+            za5.Name = "za5";
+            za5.Size = new Size(168, 133);
+            za5.SizeMode = PictureBoxSizeMode.StretchImage;
+            za5.TabIndex = 1;
+            za5.TabStop = false;
             // 
-            // pictureBox5
+            // za6
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(22, 32);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(168, 133);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 1;
-            pictureBox5.TabStop = false;
+            za6.Image = (Image)resources.GetObject("za6.Image");
+            za6.Location = new Point(22, 32);
+            za6.Name = "za6";
+            za6.Size = new Size(168, 133);
+            za6.SizeMode = PictureBoxSizeMode.StretchImage;
+            za6.TabIndex = 1;
+            za6.TabStop = false;
             // 
             // groupBox8
             // 
@@ -523,7 +591,7 @@
             groupBox8.Controls.Add(label17);
             groupBox8.Controls.Add(label16);
             groupBox8.Controls.Add(label15);
-            groupBox8.Controls.Add(pictureBox5);
+            groupBox8.Controls.Add(za6);
             groupBox8.Location = new Point(31, 477);
             groupBox8.Name = "groupBox8";
             groupBox8.Size = new Size(213, 260);
@@ -578,7 +646,7 @@
             groupBox5.Controls.Add(label21);
             groupBox5.Controls.Add(label20);
             groupBox5.Controls.Add(label19);
-            groupBox5.Controls.Add(pictureBox6);
+            groupBox5.Controls.Add(za7);
             groupBox5.Location = new Point(257, 477);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(213, 260);
@@ -626,15 +694,15 @@
             label19.TabIndex = 2;
             label19.Text = "Calzado para niño";
             // 
-            // pictureBox6
+            // za7
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(25, 31);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(168, 133);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 1;
-            pictureBox6.TabStop = false;
+            za7.Image = (Image)resources.GetObject("za7.Image");
+            za7.Location = new Point(25, 31);
+            za7.Name = "za7";
+            za7.Size = new Size(168, 133);
+            za7.SizeMode = PictureBoxSizeMode.StretchImage;
+            za7.TabIndex = 1;
+            za7.TabStop = false;
             // 
             // groupBox6
             // 
@@ -643,7 +711,7 @@
             groupBox6.Controls.Add(label25);
             groupBox6.Controls.Add(label24);
             groupBox6.Controls.Add(label23);
-            groupBox6.Controls.Add(pictureBox7);
+            groupBox6.Controls.Add(za8);
             groupBox6.Location = new Point(488, 477);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(213, 260);
@@ -691,15 +759,15 @@
             label23.TabIndex = 2;
             label23.Text = "Zapatos para niña";
             // 
-            // pictureBox7
+            // za8
             // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(24, 35);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(168, 133);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 1;
-            pictureBox7.TabStop = false;
+            za8.Image = (Image)resources.GetObject("za8.Image");
+            za8.Location = new Point(24, 35);
+            za8.Name = "za8";
+            za8.Size = new Size(168, 133);
+            za8.SizeMode = PictureBoxSizeMode.StretchImage;
+            za8.TabIndex = 1;
+            za8.TabStop = false;
             // 
             // groupBox7
             // 
@@ -708,7 +776,7 @@
             groupBox7.Controls.Add(label29);
             groupBox7.Controls.Add(label28);
             groupBox7.Controls.Add(label27);
-            groupBox7.Controls.Add(pictureBox8);
+            groupBox7.Controls.Add(za9);
             groupBox7.Location = new Point(718, 477);
             groupBox7.Name = "groupBox7";
             groupBox7.Size = new Size(217, 260);
@@ -756,15 +824,15 @@
             label27.TabIndex = 2;
             label27.Text = "Tenis para niña";
             // 
-            // pictureBox8
+            // za9
             // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(24, 35);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(168, 133);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 1;
-            pictureBox8.TabStop = false;
+            za9.Image = (Image)resources.GetObject("za9.Image");
+            za9.Location = new Point(24, 35);
+            za9.Name = "za9";
+            za9.Size = new Size(168, 133);
+            za9.SizeMode = PictureBoxSizeMode.StretchImage;
+            za9.TabIndex = 1;
+            za9.TabStop = false;
             // 
             // label37
             // 
@@ -806,15 +874,15 @@
             label40.TabIndex = 2;
             label40.Text = "Zapatos para niña";
             // 
-            // pictureBox9
+            // za10
             // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(31, 35);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(158, 120);
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox9.TabIndex = 1;
-            pictureBox9.TabStop = false;
+            za10.Image = (Image)resources.GetObject("za10.Image");
+            za10.Location = new Point(31, 35);
+            za10.Name = "za10";
+            za10.Size = new Size(158, 120);
+            za10.SizeMode = PictureBoxSizeMode.StretchImage;
+            za10.TabIndex = 1;
+            za10.TabStop = false;
             // 
             // groupBox9
             // 
@@ -823,7 +891,7 @@
             groupBox9.Controls.Add(label38);
             groupBox9.Controls.Add(label39);
             groupBox9.Controls.Add(label40);
-            groupBox9.Controls.Add(pictureBox9);
+            groupBox9.Controls.Add(za10);
             groupBox9.Location = new Point(952, 477);
             groupBox9.Name = "groupBox9";
             groupBox9.Size = new Size(217, 260);
@@ -831,34 +899,11 @@
             groupBox9.TabStop = false;
             groupBox9.Text = ".";
             // 
-            // label44
-            // 
-            label44.AutoSize = true;
-            label44.BackColor = Color.Black;
-            label44.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label44.ForeColor = Color.White;
-            label44.Location = new Point(880, 36);
-            label44.Name = "label44";
-            label44.Size = new Size(42, 20);
-            label44.TabIndex = 16;
-            label44.Text = "Niña";
-            // 
-            // label45
-            // 
-            label45.AutoSize = true;
-            label45.BackColor = Color.Black;
-            label45.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label45.ForeColor = Color.White;
-            label45.Location = new Point(833, 36);
-            label45.Name = "label45";
-            label45.Size = new Size(16, 21);
-            label45.TabIndex = 17;
-            label45.Text = "/";
-            // 
             // catalogo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(1190, 749);
             Controls.Add(groupBox9);
             Controls.Add(groupBox7);
@@ -878,32 +923,32 @@
             panel1.PerformLayout();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za4).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za3).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox10.ResumeLayout(false);
             groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za6).EndInit();
             groupBox8.ResumeLayout(false);
             groupBox8.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za7).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za8).EndInit();
             groupBox7.ResumeLayout(false);
             groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)za10).EndInit();
             groupBox9.ResumeLayout(false);
             groupBox9.PerformLayout();
             ResumeLayout(false);
@@ -913,40 +958,35 @@
         #endregion
 
         private Label label31;
-        private Label label32;
-        private Label label35;
-        private Label label33;
-        private Label label36;
-        private Label label34;
         private Panel panel1;
         private GroupBox groupBox4;
         private Label label14;
         private Label label13;
         private Label label12;
-        private PictureBox pictureBox4;
+        private PictureBox za4;
         private Label label11;
         private Label label10;
         private Label label9;
         private GroupBox groupBox3;
-        private PictureBox pictureBox3;
+        private PictureBox za3;
         private Label label8;
         private Label label7;
         private Label label6;
         private Label label5;
         private GroupBox groupBox2;
-        private PictureBox pictureBox2;
+        private PictureBox za2;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
-        private PictureBox pictureBox1;
+        private PictureBox za1;
         private GroupBox groupBox1;
         private GroupBox groupBox10;
         private Label label41;
         private Label label42;
         private Label label43;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox5;
+        private PictureBox za5;
+        private PictureBox za6;
         private GroupBox groupBox8;
         private Label label18;
         private Label label17;
@@ -957,26 +997,33 @@
         private Label label21;
         private Label label20;
         private Label label19;
-        private PictureBox pictureBox6;
+        private PictureBox za7;
         private GroupBox groupBox6;
         private Label label26;
         private Label label25;
         private Label label24;
         private Label label23;
-        private PictureBox pictureBox7;
+        private PictureBox za8;
         private GroupBox groupBox7;
         private Label label30;
         private Label label29;
         private Label label28;
         private Label label27;
-        private PictureBox pictureBox8;
+        private PictureBox za9;
         private Label label37;
         private Label label38;
         private Label label39;
         private Label label40;
-        private PictureBox pictureBox9;
+        private PictureBox za10;
         private GroupBox groupBox9;
-        private Label label45;
-        private Label label44;
+        private LinkLabel linkLabel5;
+        private LinkLabel linkLabel4;
+        private LinkLabel linkLabel3;
+        private LinkLabel linkLabel2;
+        private LinkLabel linkLabel1;
+        private Label label46;
+        private Label label47;
+        private Label label48;
+        private Label label49;
     }
 }

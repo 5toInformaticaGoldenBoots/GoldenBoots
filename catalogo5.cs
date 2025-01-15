@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace GoldenBoots
 {
-    public partial class Form1 : Form
+    public partial class Catalogo5 : Form
     {
-        public Form1()
+        public Catalogo5()
         {
             InitializeComponent();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            // Crear una nueva instancia del formulario Inicio
+            Inicio inicioForm = new Inicio();
+
+            // Mostrar el formulario Inicio
+            inicioForm.Show();
+
+            // Cerrar el formulario actual (Catalogo2)
+            this.Close();
         }
     }
 }
