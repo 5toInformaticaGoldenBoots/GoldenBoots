@@ -13,11 +13,16 @@ using System.Windows.Forms;
 //>>>>>>> Stashed changes
 namespace GoldenBoots
 {
-    public partial class Form1 : Form
+    public partial class Ofertas : Form
     {
-        public Form1()
+        public Ofertas()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
