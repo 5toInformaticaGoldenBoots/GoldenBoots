@@ -149,6 +149,7 @@
             pass.Location = new Point(87, 164);
             pass.Margin = new Padding(2);
             pass.Name = "pass";
+            pass.PasswordChar = '*';
             pass.Size = new Size(180, 23);
             pass.TabIndex = 12;
             // 

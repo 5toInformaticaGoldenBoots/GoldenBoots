@@ -1,6 +1,6 @@
 ﻿namespace GoldenBoots
 {
-    partial class Form2
+    partial class perfil
     {
         /// <summary>
         /// Required designer variable.
@@ -29,43 +29,42 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            CONTRASEÑA3 = new PictureBox();
+            NOMBRE2 = new PictureBox();
+            APELLIDO1 = new PictureBox();
+            cerrar = new Button();
+            fecha = new TextBox();
+            pass = new TextBox();
+            direccion = new TextBox();
+            userNombre = new TextBox();
+            name = new TextBox();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            volver = new Button();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)CONTRASEÑA3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)NOMBRE2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)APELLIDO1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(pictureBox5);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox5);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(CONTRASEÑA3);
+            panel1.Controls.Add(NOMBRE2);
+            panel1.Controls.Add(APELLIDO1);
+            panel1.Controls.Add(cerrar);
+            panel1.Controls.Add(fecha);
+            panel1.Controls.Add(pass);
+            panel1.Controls.Add(direccion);
+            panel1.Controls.Add(userNombre);
+            panel1.Controls.Add(name);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
@@ -77,55 +76,86 @@
             panel1.Size = new Size(445, 515);
             panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // CONTRASEÑA3
             // 
-            pictureBox1.Image = GoldenBoots.Properties.Resources.usuario7;
-            pictureBox1.Location = new Point(126, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(186, 164);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            CONTRASEÑA3.Image = Properties.Resources.pen_to_square_regular1;
+            CONTRASEÑA3.Location = new Point(334, 352);
+            CONTRASEÑA3.Name = "CONTRASEÑA3";
+            CONTRASEÑA3.Size = new Size(28, 23);
+            CONTRASEÑA3.SizeMode = PictureBoxSizeMode.Zoom;
+            CONTRASEÑA3.TabIndex = 15;
+            CONTRASEÑA3.TabStop = false;
+            CONTRASEÑA3.Click += ChangeData;
             // 
-            // label1
+            // NOMBRE2
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(100, 213);
-            label1.Name = "label1";
-            label1.Size = new Size(63, 19);
-            label1.TabIndex = 1;
-            label1.Text = "Nombre:";
+            NOMBRE2.Image = Properties.Resources.pen_to_square_regular1;
+            NOMBRE2.Location = new Point(334, 255);
+            NOMBRE2.Name = "NOMBRE2";
+            NOMBRE2.Size = new Size(28, 23);
+            NOMBRE2.SizeMode = PictureBoxSizeMode.Zoom;
+            NOMBRE2.TabIndex = 14;
+            NOMBRE2.TabStop = false;
+            NOMBRE2.Click += ChangeData;
             // 
-            // label2
+            // APELLIDO1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(104, 259);
-            label2.Name = "label2";
-            label2.Size = new Size(59, 19);
-            label2.TabIndex = 2;
-            label2.Text = "Usuario:";
+            APELLIDO1.Image = Properties.Resources.pen_to_square_regular1;
+            APELLIDO1.Location = new Point(334, 209);
+            APELLIDO1.Name = "APELLIDO1";
+            APELLIDO1.Size = new Size(28, 23);
+            APELLIDO1.SizeMode = PictureBoxSizeMode.Zoom;
+            APELLIDO1.TabIndex = 13;
+            APELLIDO1.TabStop = false;
+            APELLIDO1.Click += ChangeData;
             // 
-            // label3
+            // cerrar
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(93, 307);
-            label3.Name = "label3";
-            label3.Size = new Size(70, 19);
-            label3.TabIndex = 3;
-            label3.Text = "Dirección:";
+            cerrar.Location = new Point(198, 474);
+            cerrar.Name = "cerrar";
+            cerrar.Size = new Size(89, 23);
+            cerrar.TabIndex = 11;
+            cerrar.Text = "Cerrar sesión";
+            cerrar.UseVisualStyleBackColor = true;
+            cerrar.Click += cerrar_Click;
             // 
-            // label4
+            // fecha
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(82, 356);
-            label4.Name = "label4";
-            label4.Size = new Size(81, 19);
-            label4.TabIndex = 4;
-            label4.Text = "Contraseña:";
+            fecha.Location = new Point(169, 395);
+            fecha.Name = "fecha";
+            fecha.Size = new Size(159, 23);
+            fecha.TabIndex = 10;
+            fecha.Text = "17/1/2025";
+            // 
+            // pass
+            // 
+            pass.Location = new Point(169, 352);
+            pass.Name = "pass";
+            pass.PasswordChar = '*';
+            pass.Size = new Size(159, 23);
+            pass.TabIndex = 9;
+            // 
+            // direccion
+            // 
+            direccion.Location = new Point(169, 303);
+            direccion.Name = "direccion";
+            direccion.Size = new Size(159, 23);
+            direccion.TabIndex = 8;
+            direccion.Text = "Las Caobas";
+            // 
+            // userNombre
+            // 
+            userNombre.Location = new Point(169, 255);
+            userNombre.Name = "userNombre";
+            userNombre.Size = new Size(159, 23);
+            userNombre.TabIndex = 7;
+            // 
+            // name
+            // 
+            name.Location = new Point(169, 209);
+            name.Name = "name";
+            name.Size = new Size(159, 23);
+            name.TabIndex = 6;
             // 
             // label5
             // 
@@ -137,63 +167,58 @@
             label5.TabIndex = 5;
             label5.Text = "Dia de registro:";
             // 
-            // textBox1
+            // label4
             // 
-            textBox1.Location = new Point(169, 209);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(159, 23);
-            textBox1.TabIndex = 6;
+            label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(82, 356);
+            label4.Name = "label4";
+            label4.Size = new Size(81, 19);
+            label4.TabIndex = 4;
+            label4.Text = "Contraseña:";
             // 
-            // textBox2
+            // label3
             // 
-            textBox2.Location = new Point(169, 255);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(159, 23);
-            textBox2.TabIndex = 7;
+            label3.AutoSize = true;
+            label3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(93, 307);
+            label3.Name = "label3";
+            label3.Size = new Size(70, 19);
+            label3.TabIndex = 3;
+            label3.Text = "Dirección:";
             // 
-            // textBox3
+            // label2
             // 
-            textBox3.Location = new Point(169, 303);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(159, 23);
-            textBox3.TabIndex = 8;
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(104, 259);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 19);
+            label2.TabIndex = 2;
+            label2.Text = "Usuario:";
             // 
-            // textBox4
+            // label1
             // 
-            textBox4.Location = new Point(169, 352);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(159, 23);
-            textBox4.TabIndex = 9;
-            textBox4.TextChanged += textBox4_TextChanged;
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(100, 213);
+            label1.Name = "label1";
+            label1.Size = new Size(63, 19);
+            label1.TabIndex = 1;
+            label1.Text = "Nombre:";
             // 
-            // textBox5
+            // pictureBox1
             // 
-            textBox5.Location = new Point(169, 395);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(159, 23);
-            textBox5.TabIndex = 10;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(62, 470);
-            button1.Name = "button1";
-            button1.Size = new Size(89, 23);
-            button1.TabIndex = 11;
-            button1.Text = "Cerrar sesión";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(292, 470);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 23);
-            button2.TabIndex = 12;
-            button2.Text = "Cambiar contraseña";
-            button2.UseVisualStyleBackColor = true;
+            pictureBox1.Image = Properties.Resources.usuario1;
+            pictureBox1.Location = new Point(126, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(186, 164);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = GoldenBoots.Properties.Resources.WhatsApp_Image_2025_01_15_at_10_42_21_PM;
             pictureBox2.Location = new Point(12, 29);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(249, 515);
@@ -201,52 +226,33 @@
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // volver
             // 
-            pictureBox3.Image = GoldenBoots.Properties.Resources.user_pen_solid1;
-            pictureBox3.Location = new Point(334, 209);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(28, 23);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 13;
-            pictureBox3.TabStop = false;
+            volver.Location = new Point(0, 0);
+            volver.Name = "volver";
+            volver.Size = new Size(75, 23);
+            volver.TabIndex = 14;
+            volver.Text = "Volver";
+            volver.UseVisualStyleBackColor = true;
+            volver.Click += volver_Click;
             // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = GoldenBoots.Properties.Resources.user_pen_solid1;
-            pictureBox4.Location = new Point(334, 255);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(28, 23);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 14;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = GoldenBoots.Properties.Resources.pen_to_square_regular1;
-            pictureBox5.Location = new Point(334, 352);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(28, 23);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 15;
-            pictureBox5.TabStop = false;
-            // 
-            // Form2
+            // perfil
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 566);
+            Controls.Add(volver);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
-            Name = "Form2";
+            Name = "perfil";
             Text = "Form2";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)CONTRASEÑA3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)NOMBRE2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)APELLIDO1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
@@ -256,19 +262,19 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox fecha;
+        private TextBox pass;
+        private TextBox direccion;
+        private TextBox userNombre;
+        private TextBox name;
         private Label label5;
         private Label label4;
         private Label label3;
-        private PictureBox pictureBox3;
-        private Button button2;
-        private Button button1;
+        private PictureBox APELLIDO1;
+        private Button cerrar;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
+        private PictureBox CONTRASEÑA3;
+        private PictureBox NOMBRE2;
+        private Button volver;
     }
 }

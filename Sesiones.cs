@@ -28,17 +28,17 @@ namespace GoldenBoots
         {
             Database db = new Database();
 
-            List<object[]> data = db.Query($"SELECT * FROM USUARIOS WHERE EMAIL = '{email.Text}'");
-            
-            foreach (object[] row in data)
-            {
-                if (row[4].ToString() == pass.Text)
-                {
-                    MessageBox.Show("Sesión Iniciada Exitosamente", "Sesión Iniciada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            object[] data = db.QueryOne($"SELECT * FROM USUARIOS WHERE EMAIL = '{email.Text}'");
 
-                    RepeatFunctions.OpenForm(this, new Inicio());
-                    return;
-                }
+            if (data[4].ToString() == pass.Text)
+            {
+                MessageBox.Show("Sesión Iniciada Exitosamente", "Sesión Iniciada", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                db.Execute($"UPDATE USUARIOS SET ACTIVO = 0");
+                db.Execute($"UPDATE USUARIOS SET ACTIVO = 1 WHERE EMAIL = '{email.Text}'");
+
+                RepeatFunctions.OpenForm(this, new Inicio());
+                return;
             }
 
             MessageBox.Show("La contraseña o el correo no están correctos", "Datos no encontrados",

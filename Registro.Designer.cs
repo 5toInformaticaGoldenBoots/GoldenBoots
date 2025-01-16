@@ -121,6 +121,7 @@
             txtContraseña.Margin = new Padding(2);
             txtContraseña.Multiline = true;
             txtContraseña.Name = "txtContraseña";
+            txtContraseña.PasswordChar = '*';
             txtContraseña.Size = new Size(191, 24);
             txtContraseña.TabIndex = 7;
             // 
@@ -141,6 +142,7 @@
             txtConfirmar.Margin = new Padding(2);
             txtConfirmar.Multiline = true;
             txtConfirmar.Name = "txtConfirmar";
+            txtConfirmar.PasswordChar = '*';
             txtConfirmar.Size = new Size(191, 24);
             txtConfirmar.TabIndex = 9;
             // 

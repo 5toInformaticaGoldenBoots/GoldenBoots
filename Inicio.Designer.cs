@@ -328,6 +328,7 @@ namespace GoldenBoots
             carro3.SizeMode = PictureBoxSizeMode.Zoom;
             carro3.TabIndex = 0;
             carro3.TabStop = false;
+            carro3.Click += carro3_Click;
             // 
             // inicio123
             // 

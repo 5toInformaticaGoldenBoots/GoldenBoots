@@ -19,49 +19,66 @@ namespace GoldenBoots
         {
             this._connectionString = $"Server={server};Database={database};Trusted_Connection={trustedConnection};TrustServerCertificate=True;";
             this._sqlConnection = new SqlConnection(this._connectionString);
+            this._sqlConnection.Open();
         }
 
         public void Execute(string query)
         {
-            using (SqlConnection conn = this._sqlConnection)
-            {
-                conn.Open();
 
-                using (SqlCommand command = new SqlCommand(query, conn))
-                {
-                    command.ExecuteNonQuery();
-                }
+            using (SqlCommand command = new SqlCommand(query, this._sqlConnection))
+            {
+                command.ExecuteNonQuery();
             }
         }
 
         public List<object[]> Query(string query)
         {
-            using (SqlConnection conn = this._sqlConnection)
+            SqlCommand command = new SqlCommand(query, this._sqlConnection);
+            
+            List<object[]> result = new();
+
+            using (SqlDataReader reader = command.ExecuteReader())
             {
-                conn.Open();
+                int maxColumns = reader.FieldCount;
+                object[] data = new object[maxColumns];
 
-                SqlCommand command = new SqlCommand(query, conn);
-
-                List<object[]> result = new();
-
-                using (SqlDataReader reader = command.ExecuteReader())
+                while (reader.Read())
                 {
-                    int maxColumns = reader.FieldCount;
-                    object[] data = new object[maxColumns];
-
-                    while (reader.Read())
+                    for (int i = 0; i < maxColumns; i++)
                     {
-                        for (int i = 0; i < maxColumns; i++)
-                        {
-                            data[i] = reader.GetValue(i);
-                        }
-
-                        result.Add(data);
+                        data[i] = reader.GetValue(i);
                     }
+
+                    result.Add(data);
+                }
+            }
+
+            return result;
+        }
+
+        public object[] QueryOne(string query)
+        {
+            SqlCommand command = new SqlCommand(query, this._sqlConnection);
+
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                int maxColumns = reader.FieldCount;
+                object[] data = new object[maxColumns];
+
+                reader.Read();
+
+                for (int i = 0; i < maxColumns; i++)
+                {
+                    data[i] = reader.GetValue(i);
                 }
 
-                return result;
+                return data;
             }
+        }
+
+        public void Close()
+        {
+            this._sqlConnection.Close();
         }
     }
 }

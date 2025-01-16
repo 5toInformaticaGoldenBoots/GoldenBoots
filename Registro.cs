@@ -61,11 +61,13 @@ namespace GoldenBoots
 
             try
             {
-                db.Execute($"INSERT INTO USUARIOS VALUES ('{usuario}', '{nombre}', '{email}', '{contraseña}', 1)");
+                db.Execute($"INSERT INTO USUARIOS VALUES ('{usuario}', '{nombre}', '{email}', '{contraseña}', 1, 1)");
+                db.Execute($"UPDATE USUARIOS SET ACTIVO = 0 WHERE NOMBRE != {usuario}");
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ha ocurrido un error, vuelva a intentarlo", "Database Error", MessageBoxButtons.OK);
+                return;
             }
 
             MessageBox.Show("Cuenta registrada con exito!", "Cuenta registrada", MessageBoxButtons.OK,

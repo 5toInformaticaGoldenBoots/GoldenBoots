@@ -153,7 +153,6 @@ private System.ComponentModel.IContainer components = null;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = GoldenBoots.Properties.Resources.usuario6;
             pictureBox1.Location = new Point(787, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(58, 47);
@@ -163,7 +162,6 @@ private System.ComponentModel.IContainer components = null;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = GoldenBoots.Properties.Resources.carrito_de_compras;
             pictureBox2.Location = new Point(721, 0);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(58, 47);
@@ -183,7 +181,6 @@ private System.ComponentModel.IContainer components = null;
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = GoldenBoots.Properties.Resources._2;
             pictureBox3.Location = new Point(64, 474);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(165, 157);
@@ -193,7 +190,6 @@ private System.ComponentModel.IContainer components = null;
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = GoldenBoots.Properties.Resources._41;
             pictureBox4.Location = new Point(624, 474);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(155, 157);
@@ -203,7 +199,6 @@ private System.ComponentModel.IContainer components = null;
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = GoldenBoots.Properties.Resources._3;
             pictureBox5.Location = new Point(336, 474);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(169, 157);

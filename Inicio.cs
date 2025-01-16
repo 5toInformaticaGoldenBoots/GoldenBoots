@@ -87,7 +87,19 @@ namespace GoldenBoots
 
         private void OpenRegister(object sender, EventArgs e)
         {
+            Database db = new Database();
+
+            if (db.Query("SELECT * FROM USUARIOS WHERE ACTIVO = 1").Count > 0)
+            {
+                RepeatFunctions.OpenForm(this, new perfil());
+                return;
+            }
             RepeatFunctions.OpenForm(this, new Sesiones());
+        }
+
+        private void carro3_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Carrito());
         }
     }
 }
