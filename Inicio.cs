@@ -11,6 +11,7 @@ namespace GoldenBoots
             carro3.Image = Image.FromFile(@"..\..\..\Resources\carrito.png");
         }
 
+
         private void label17_Click(object sender, EventArgs e)
         {
 
