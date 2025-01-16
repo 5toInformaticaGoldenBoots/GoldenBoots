@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GoldenBoots
 {
@@ -34,25 +35,48 @@ namespace GoldenBoots
                 string.IsNullOrWhiteSpace(contraseña) ||
                 string.IsNullOrWhiteSpace(confirmarContraseña))
             {
-                MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Todos los campos son obligatorios.", "Campos Obligatorios", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            if (contraseña.Length < 9)
+            {
+                MessageBox.Show("La contraseña tiene que tener más de 8 carácteres", "Contraseña corta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
             if (contraseña != confirmarContraseña)
             {
-                MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Las contraseñas no coinciden.", "Contraseñas diferentes", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
             if (!aceptaTerminos)
             {
-                MessageBox.Show("Debe aceptar los términos y condiciones.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe aceptar los términos y condiciones.", "Acepta términos y condiciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
-            // Mensaje de éxito
-            MessageBox.Show("Registro exitoso.\nBienvenido, " + nombre + "!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Database db = new Database();
+
+            try
+            {
+                db.Execute($"INSERT INTO USUARIOS VALUES ('{usuario}', '{nombre}', '{email}', '{contraseña}', 1)");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ha ocurrido un error, vuelva a intentarlo", "Database Error", MessageBoxButtons.OK);
+            }
+
+            MessageBox.Show("Cuenta registrada con exito!", "Cuenta registrada", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+            RepeatFunctions.OpenForm(this, new Inicio());
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Sesiones());
         }
     }
 }
-        

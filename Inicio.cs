@@ -87,7 +87,7 @@ namespace GoldenBoots
 
         private void OpenRegister(object sender, EventArgs e)
         {
-            RepeatFunctions.OpenForm(new Sesiones());
+            RepeatFunctions.OpenForm(this, new Sesiones());
         }
     }
 }

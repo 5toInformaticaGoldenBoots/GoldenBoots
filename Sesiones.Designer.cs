@@ -32,13 +32,12 @@
             label2 = new Label();
             linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
             linkLabel3 = new LinkLabel();
-            label3 = new Label();
+            mail = new Label();
             label4 = new Label();
-            button1 = new Button();
-            label5 = new Label();
+            iniciar = new Button();
+            email = new TextBox();
+            pass = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -74,44 +73,25 @@
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(0, 15);
             linkLabel1.TabIndex = 2;
-
             // 
             // linkLabel2
             // 
             linkLabel2.AutoSize = true;
             linkLabel2.LinkColor = Color.Black;
-            linkLabel2.Location = new Point(208, 44);
+            linkLabel2.Location = new Point(208, 45);
             linkLabel2.Margin = new Padding(2, 0, 2, 0);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(59, 15);
             linkLabel2.TabIndex = 3;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Registrate\r\n";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(88, 100);
-            textBox1.Margin = new Padding(2);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(197, 26);
-            textBox1.TabIndex = 4;
-
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(88, 168);
-            textBox2.Margin = new Padding(2);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(197, 22);
-            textBox2.TabIndex = 5;
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // linkLabel3
             // 
             linkLabel3.AutoSize = true;
             linkLabel3.LinkColor = Color.Black;
-            linkLabel3.Location = new Point(88, 190);
+            linkLabel3.Location = new Point(110, 190);
             linkLabel3.Margin = new Padding(2, 0, 2, 0);
             linkLabel3.Name = "linkLabel3";
             linkLabel3.Size = new Size(139, 15);
@@ -119,52 +99,58 @@
             linkLabel3.TabStop = true;
             linkLabel3.Text = "¿Olvidaste la contraseña?";
             // 
-            // label3
+            // mail
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.White;
-            label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(88, 83);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(41, 15);
-            label3.TabIndex = 7;
-            label3.Text = "Email*";
+            mail.AutoSize = true;
+            mail.BackColor = Color.Transparent;
+            mail.ForeColor = SystemColors.ActiveCaptionText;
+            mail.Location = new Point(88, 83);
+            mail.Margin = new Padding(2, 0, 2, 0);
+            mail.Name = "mail";
+            mail.Size = new Size(41, 15);
+            mail.TabIndex = 7;
+            mail.Text = "Email*";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.White;
+            label4.BackColor = Color.Transparent;
             label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(88, 151);
+            label4.Location = new Point(87, 146);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(72, 15);
             label4.TabIndex = 8;
             label4.Text = "Contraseña*";
             // 
-            // button1
+            // iniciar
             // 
-            button1.BackColor = Color.Black;
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(110, 226);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(139, 29);
-            button1.TabIndex = 9;
-            button1.Text = "Iniciar sesión";
-            button1.UseVisualStyleBackColor = false;
+            iniciar.BackColor = Color.Black;
+            iniciar.ForeColor = SystemColors.ButtonHighlight;
+            iniciar.Location = new Point(110, 226);
+            iniciar.Margin = new Padding(2);
+            iniciar.Name = "iniciar";
+            iniciar.Size = new Size(139, 29);
+            iniciar.TabIndex = 9;
+            iniciar.Text = "Iniciar sesión";
+            iniciar.UseVisualStyleBackColor = false;
+            iniciar.Click += iniciar_Click;
             // 
-            // label5
+            // email
             // 
-            label5.AutoSize = true;
-            label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(127, 262);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(97, 15);
-            label5.TabIndex = 10;
-            label5.Text = "O conectate con:\r\n";
+            email.Location = new Point(87, 101);
+            email.Margin = new Padding(2);
+            email.Name = "email";
+            email.Size = new Size(180, 23);
+            email.TabIndex = 11;
+            // 
+            // pass
+            // 
+            pass.Location = new Point(87, 164);
+            pass.Margin = new Padding(2);
+            pass.Name = "pass";
+            pass.Size = new Size(180, 23);
+            pass.TabIndex = 12;
             // 
             // Sesiones
             // 
@@ -172,13 +158,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(372, 346);
-            Controls.Add(label5);
-            Controls.Add(button1);
+            Controls.Add(pass);
+            Controls.Add(email);
+            Controls.Add(iniciar);
             Controls.Add(label4);
-            Controls.Add(label3);
+            Controls.Add(mail);
             Controls.Add(linkLabel3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
             Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
             Controls.Add(label2);
@@ -187,7 +172,6 @@
             Margin = new Padding(2);
             Name = "Sesiones";
             Text = "InicioDeSesion";
-            TransparencyKey = Color.White;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -197,12 +181,11 @@
         private Label label2;
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private LinkLabel linkLabel3;
-        private Label label3;
+        private Label mail;
         private Label label4;
-        private Button button1;
-        private Label label5;
+        private Button iniciar;
+        private TextBox email;
+        private TextBox pass;
     }
 }
