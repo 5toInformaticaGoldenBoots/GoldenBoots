@@ -889,5 +889,43 @@ namespace GoldenBoots.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        internal static System.Drawing.Bitmap usuario6
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("usuario6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap carrito_de_compras
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("carrito-de-compras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap _2
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap _3
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+
     }
 }
