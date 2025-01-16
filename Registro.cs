@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Microsoft.Data.SqlClient;
 namespace GoldenBoots
 {
     public partial class Registro : Form
@@ -16,6 +16,7 @@ namespace GoldenBoots
         {
             InitializeComponent();
         }
+        private string connectionString = "Server=TU_SERVIDOR;Database=TU_BASE_DE_DATOS;Trusted_Connection=True;";
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -50,9 +51,17 @@ namespace GoldenBoots
                 return;
             }
 
-            // Mensaje de éxito
-            MessageBox.Show("Registro exitoso.\nBienvenido, " + nombre + "!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+             using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+
+                    // Mensaje de éxito
+                    MessageBox.Show("Registro exitoso.\nBienvenido, " + nombre + "!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
-        
+}
+
+
+}
