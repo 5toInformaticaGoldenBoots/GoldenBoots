@@ -1,3 +1,5 @@
+using GoldenBoots.Properties;
+
 namespace GoldenBoots
 {
     public partial class Inicio : Form
@@ -81,6 +83,11 @@ namespace GoldenBoots
             catalogo catalogoForm = new catalogo();
             catalogoForm.Show();
             this.Hide();
+        }
+
+        private void OpenRegister(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(new Sesiones());
         }
     }
 }

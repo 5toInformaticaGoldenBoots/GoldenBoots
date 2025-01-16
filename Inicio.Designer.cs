@@ -46,6 +46,7 @@ namespace GoldenBoots
             label4 = new Label();
             label1 = new Label();
             panel2 = new Panel();
+            label8 = new Label();
             lupa12 = new PictureBox();
             textBox1 = new TextBox();
             like1 = new PictureBox();
@@ -53,7 +54,6 @@ namespace GoldenBoots
             inicio123 = new PictureBox();
             label17 = new Label();
             label18 = new Label();
-            label8 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)lupa12).BeginInit();
@@ -266,6 +266,7 @@ namespace GoldenBoots
             label1.Size = new Size(89, 17);
             label1.TabIndex = 1;
             label1.Text = "Iniciar sesión";
+            label1.Click += OpenRegister;
             // 
             // panel2
             // 
@@ -279,6 +280,16 @@ namespace GoldenBoots
             panel2.Name = "panel2";
             panel2.Size = new Size(1281, 69);
             panel2.TabIndex = 0;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(32, 21);
+            label8.Name = "label8";
+            label8.Size = new Size(161, 28);
+            label8.TabIndex = 4;
+            label8.Text = "GooldentBoots";
             // 
             // lupa12
             // 
@@ -352,16 +363,6 @@ namespace GoldenBoots
             label18.TabIndex = 3;
             label18.Text = "Encuentra el par perfecto para cada paso de tu vida";
             label18.Click += label18_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(32, 21);
-            label8.Name = "label8";
-            label8.Size = new Size(161, 28);
-            label8.TabIndex = 4;
-            label8.Text = "GooldentBoots";
             // 
             // Inicio
             // 
