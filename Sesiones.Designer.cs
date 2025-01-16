@@ -74,7 +74,7 @@
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(0, 15);
             linkLabel1.TabIndex = 2;
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+
             // 
             // linkLabel2
             // 
@@ -96,7 +96,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(197, 26);
             textBox1.TabIndex = 4;
-            textBox1.TextChanged += textBox1_TextChanged;
+
             // 
             // textBox2
             // 
@@ -154,7 +154,6 @@
             button1.TabIndex = 9;
             button1.Text = "Iniciar sesión";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // label5
             // 
@@ -189,7 +188,6 @@
             Name = "Sesiones";
             Text = "InicioDeSesion";
             TransparencyKey = Color.White;
-            Load += Sesiones_Load;
             ResumeLayout(false);
             PerformLayout();
         }
