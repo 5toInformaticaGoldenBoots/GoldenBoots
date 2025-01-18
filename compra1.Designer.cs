@@ -34,9 +34,6 @@
             label32 = new Label();
             label31 = new Label();
             label30 = new Label();
-            pictureBox4 = new PictureBox();
-            textBox2 = new TextBox();
-            pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             label6 = new Label();
             label3 = new Label();
@@ -91,8 +88,6 @@
             panel12 = new Panel();
             linkLabel1 = new LinkLabel();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imgprincipal).BeginInit();
             ((System.ComponentModel.ISupportInitialize)p1).BeginInit();
@@ -123,9 +118,6 @@
             panel1.Controls.Add(label32);
             panel1.Controls.Add(label31);
             panel1.Controls.Add(label30);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox6);
             panel1.Location = new Point(0, 74);
             panel1.Name = "panel1";
@@ -137,7 +129,7 @@
             label35.AutoSize = true;
             label35.Location = new Point(642, 51);
             label35.Name = "label35";
-            label35.Size = new Size(44, 15);
+            label35.Size = new Size(58, 20);
             label35.TabIndex = 41;
             label35.Text = "label35";
             // 
@@ -146,7 +138,7 @@
             label32.AutoSize = true;
             label32.Location = new Point(634, 43);
             label32.Name = "label32";
-            label32.Size = new Size(44, 15);
+            label32.Size = new Size(58, 20);
             label32.TabIndex = 35;
             label32.Text = "label32";
             // 
@@ -155,7 +147,7 @@
             label31.AutoSize = true;
             label31.Location = new Point(626, 35);
             label31.Name = "label31";
-            label31.Size = new Size(44, 15);
+            label31.Size = new Size(58, 20);
             label31.TabIndex = 34;
             label31.Text = "label31";
             // 
@@ -164,37 +156,9 @@
             label30.AutoSize = true;
             label30.Location = new Point(618, 27);
             label30.Name = "label30";
-            label30.Size = new Size(44, 15);
+            label30.Size = new Size(58, 20);
             label30.TabIndex = 33;
             label30.Text = "label30";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.lupa;
-            pictureBox4.Location = new Point(944, 21);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 32);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(991, 21);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(163, 29);
-            textBox2.TabIndex = 2;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources.like;
-            pictureBox5.Location = new Point(1160, 16);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(45, 34);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 1;
-            pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -212,7 +176,7 @@
             label6.Font = new Font("Segoe UI Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.Location = new Point(933, 29);
             label6.Name = "label6";
-            label6.Size = new Size(12, 20);
+            label6.Size = new Size(16, 25);
             label6.TabIndex = 8;
             label6.Text = "|";
             // 
@@ -222,7 +186,7 @@
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(1022, 32);
             label3.Name = "label3";
-            label3.Size = new Size(113, 17);
+            label3.Size = new Size(144, 23);
             label3.TabIndex = 10;
             label3.Text = "Unete a nosotros";
             // 
@@ -232,7 +196,7 @@
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(951, 31);
             label5.Name = "label5";
-            label5.Size = new Size(47, 17);
+            label5.Size = new Size(61, 23);
             label5.TabIndex = 6;
             label5.Text = "Ayuda";
             // 
@@ -242,7 +206,7 @@
             label2.Font = new Font("Segoe UI Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(1141, 29);
             label2.Name = "label2";
-            label2.Size = new Size(12, 20);
+            label2.Size = new Size(16, 25);
             label2.TabIndex = 9;
             label2.Text = "|";
             // 
@@ -252,7 +216,7 @@
             label4.Font = new Font("Segoe UI Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(1004, 29);
             label4.Name = "label4";
-            label4.Size = new Size(12, 20);
+            label4.Size = new Size(16, 25);
             label4.TabIndex = 5;
             label4.Text = "|";
             // 
@@ -262,7 +226,7 @@
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(1159, 32);
             label1.Name = "label1";
-            label1.Size = new Size(89, 17);
+            label1.Size = new Size(112, 23);
             label1.TabIndex = 7;
             label1.Text = "Iniciar sesión";
             // 
@@ -337,7 +301,7 @@
             label8.Font = new Font("Sitka Small", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.Location = new Point(642, 203);
             label8.Name = "label8";
-            label8.Size = new Size(385, 48);
+            label8.Size = new Size(477, 58);
             label8.TabIndex = 18;
             label8.Text = "Zapatos para Hombre";
             // 
@@ -347,7 +311,7 @@
             label9.Font = new Font("Sitka Small", 9.75F);
             label9.Location = new Point(613, 261);
             label9.Name = "label9";
-            label9.Size = new Size(385, 19);
+            label9.Size = new Size(501, 24);
             label9.TabIndex = 21;
             label9.Text = "Zapatos casuales para hombre en colores negro y marrón";
             // 
@@ -357,7 +321,7 @@
             label10.Font = new Font("Sitka Small", 9.75F);
             label10.Location = new Point(609, 282);
             label10.Name = "label10";
-            label10.Size = new Size(465, 19);
+            label10.Size = new Size(604, 24);
             label10.TabIndex = 22;
             label10.Text = " diseñados para aportar elegancia y comodidad en cualquier ocasión.";
             // 
@@ -367,7 +331,7 @@
             label11.Font = new Font("Sitka Small", 9.75F);
             label11.Location = new Point(611, 301);
             label11.Name = "label11";
-            label11.Size = new Size(572, 19);
+            label11.Size = new Size(747, 24);
             label11.TabIndex = 23;
             label11.Text = "Confeccionados en cuero sintético de alta calidad, presentan un acabado liso y suave,";
             // 
@@ -377,7 +341,7 @@
             label12.Font = new Font("Sitka Small", 9.75F);
             label12.Location = new Point(613, 321);
             label12.Name = "label12";
-            label12.Size = new Size(490, 19);
+            label12.Size = new Size(638, 24);
             label12.TabIndex = 24;
             label12.Text = "ideal para combinar con atuendos formales o casuales. Su diseño incluye";
             label12.Click += label12_Click;
@@ -388,7 +352,7 @@
             label13.Font = new Font("Sitka Small", 9.75F);
             label13.Location = new Point(612, 340);
             label13.Name = "label13";
-            label13.Size = new Size(579, 19);
+            label13.Size = new Size(751, 24);
             label13.TabIndex = 25;
             label13.Text = "detalles clásicos, como costuras decorativas y cordones a tono, lo que brinda un estilo";
             // 
@@ -398,7 +362,7 @@
             label14.Font = new Font("Sitka Small", 9.75F);
             label14.Location = new Point(614, 360);
             label14.Name = "label14";
-            label14.Size = new Size(578, 19);
+            label14.Size = new Size(758, 24);
             label14.TabIndex = 26;
             label14.Text = "sofisticado. La suela de goma antideslizante ofrece un excelente agarre y durabilidad, ";
             // 
@@ -408,7 +372,7 @@
             label15.Font = new Font("Sitka Small", 9.75F);
             label15.Location = new Point(613, 380);
             label15.Name = "label15";
-            label15.Size = new Size(187, 19);
+            label15.Size = new Size(244, 24);
             label15.TabIndex = 27;
             label15.Text = "perfecta para el uso diario.";
             // 
@@ -419,7 +383,7 @@
             label16.ForeColor = Color.DarkOrange;
             label16.Location = new Point(626, 433);
             label16.Name = "label16";
-            label16.Size = new Size(123, 31);
+            label16.Size = new Size(156, 39);
             label16.TabIndex = 28;
             label16.Text = "RD$1,860";
             // 
@@ -429,7 +393,7 @@
             label17.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.Location = new Point(665, 467);
             label17.Name = "label17";
-            label17.Size = new Size(38, 15);
+            label17.Size = new Size(49, 20);
             label17.TabIndex = 29;
             label17.Text = "2,926";
             // 
@@ -450,7 +414,7 @@
             label18.ForeColor = Color.DarkOrange;
             label18.Location = new Point(16, 20);
             label18.Name = "label18";
-            label18.Size = new Size(76, 15);
+            label18.Size = new Size(97, 20);
             label18.TabIndex = 0;
             label18.Text = "Casi agotado";
             // 
@@ -460,7 +424,7 @@
             label21.Font = new Font("Sitka Small", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.Location = new Point(626, 546);
             label21.Name = "label21";
-            label21.Size = new Size(63, 23);
+            label21.Size = new Size(80, 28);
             label21.TabIndex = 31;
             label21.Text = "Tallas:";
             // 
@@ -470,7 +434,7 @@
             label22.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label22.Location = new Point(8, 8);
             label22.Name = "label22";
-            label22.Size = new Size(28, 18);
+            label22.Size = new Size(34, 21);
             label22.TabIndex = 32;
             label22.Text = "6.5";
             // 
@@ -480,7 +444,7 @@
             label23.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label23.Location = new Point(7, 9);
             label23.Name = "label23";
-            label23.Size = new Size(27, 18);
+            label23.Size = new Size(33, 21);
             label23.TabIndex = 33;
             label23.Text = "7.5";
             // 
@@ -490,7 +454,7 @@
             label24.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label24.Location = new Point(14, 9);
             label24.Name = "label24";
-            label24.Size = new Size(16, 18);
+            label24.Size = new Size(20, 21);
             label24.TabIndex = 34;
             label24.Text = "8";
             // 
@@ -500,7 +464,7 @@
             label25.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label25.Location = new Point(7, 10);
             label25.Name = "label25";
-            label25.Size = new Size(28, 18);
+            label25.Size = new Size(34, 21);
             label25.TabIndex = 35;
             label25.Text = "8.5";
             // 
@@ -510,7 +474,7 @@
             label26.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label26.Location = new Point(15, 8);
             label26.Name = "label26";
-            label26.Size = new Size(16, 18);
+            label26.Size = new Size(20, 21);
             label26.TabIndex = 36;
             label26.Text = "9";
             // 
@@ -520,7 +484,7 @@
             label28.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label28.Location = new Point(7, 11);
             label28.Name = "label28";
-            label28.Size = new Size(34, 18);
+            label28.Size = new Size(42, 21);
             label28.TabIndex = 38;
             label28.Text = "10.5";
             // 
@@ -530,7 +494,7 @@
             label29.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label29.Location = new Point(7, 8);
             label29.Name = "label29";
-            label29.Size = new Size(28, 18);
+            label29.Size = new Size(34, 21);
             label29.TabIndex = 39;
             label29.Text = "9.5";
             // 
@@ -540,7 +504,7 @@
             label33.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label33.Location = new Point(9, 11);
             label33.Name = "label33";
-            label33.Size = new Size(32, 18);
+            label33.Size = new Size(40, 21);
             label33.TabIndex = 40;
             label33.Text = "11.5";
             label33.Click += label33_Click;
@@ -551,7 +515,7 @@
             label34.Font = new Font("Sitka Small", 9F, FontStyle.Bold);
             label34.Location = new Point(11, 11);
             label34.Name = "label34";
-            label34.Size = new Size(22, 18);
+            label34.Size = new Size(27, 21);
             label34.TabIndex = 41;
             label34.Text = "12";
             // 
@@ -631,7 +595,7 @@
             // 
             numericUpDown1.Location = new Point(621, 673);
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(63, 23);
+            numericUpDown1.Size = new Size(63, 27);
             numericUpDown1.TabIndex = 52;
             // 
             // button1
@@ -671,7 +635,7 @@
             label19.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label19.Location = new Point(1049, 412);
             label19.Name = "label19";
-            label19.Size = new Size(58, 17);
+            label19.Size = new Size(74, 23);
             label19.TabIndex = 56;
             label19.Text = "Colores:";
             // 
@@ -689,7 +653,7 @@
             label20.AutoSize = true;
             label20.Location = new Point(25, 11);
             label20.Name = "label20";
-            label20.Size = new Size(44, 15);
+            label20.Size = new Size(58, 20);
             label20.TabIndex = 0;
             label20.Text = "label20";
             // 
@@ -708,7 +672,7 @@
             linkLabel1.LinkColor = Color.Black;
             linkLabel1.Location = new Point(884, 32);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(43, 17);
+            linkLabel1.Size = new Size(56, 23);
             linkLabel1.TabIndex = 86;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Inicio";
@@ -716,7 +680,7 @@
             // 
             // compra1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1276, 749);
@@ -767,8 +731,6 @@
             Text = "compra1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)imgprincipal).EndInit();
             ((System.ComponentModel.ISupportInitialize)p1).EndInit();
@@ -808,9 +770,6 @@
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox4;
-        private TextBox textBox2;
-        private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private Label label6;
         private Label label3;

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing.Text;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 
 namespace GoldenBoots
 {
@@ -63,6 +55,7 @@ namespace GoldenBoots
             using (SqlDataReader reader = command.ExecuteReader())
             {
                 int maxColumns = reader.FieldCount;
+
                 object[] data = new object[maxColumns];
 
                 reader.Read();
@@ -71,6 +64,8 @@ namespace GoldenBoots
                 {
                     data[i] = reader.GetValue(i);
                 }
+
+                
 
                 return data;
             }

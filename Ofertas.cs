@@ -24,5 +24,30 @@ namespace GoldenBoots
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Inicio());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new perfil());
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new catalogo());
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new catalogo2());
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
