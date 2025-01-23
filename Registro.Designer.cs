@@ -30,26 +30,28 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtNombre = new TextBox();
+            txtUsuario = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtEmail = new TextBox();
             label4 = new Label();
-            textBox4 = new TextBox();
+            txtContraseña = new TextBox();
             label5 = new Label();
-            textBox5 = new TextBox();
+            txtConfirmar = new TextBox();
             label6 = new Label();
-            checkBox1 = new CheckBox();
+            chkTerminos = new CheckBox();
             button1 = new Button();
+            linkLabel2 = new LinkLabel();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Mongolian Baiti", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(148, 24);
+            label1.Location = new Point(104, 14);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(154, 34);
+            label1.Size = new Size(110, 24);
             label1.TabIndex = 0;
             label1.Text = "Regístrate";
             // 
@@ -57,133 +59,163 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(96, 86);
+            label2.Location = new Point(67, 52);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(81, 25);
+            label2.Size = new Size(51, 15);
             label2.TabIndex = 1;
             label2.Text = "Nombre";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Location = new Point(96, 114);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(271, 37);
-            textBox1.TabIndex = 2;
+            txtNombre.Location = new Point(67, 68);
+            txtNombre.Margin = new Padding(2);
+            txtNombre.Multiline = true;
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(191, 24);
+            txtNombre.TabIndex = 2;
             // 
-            // textBox2
+            // txtUsuario
             // 
-            textBox2.Location = new Point(96, 206);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(271, 37);
-            textBox2.TabIndex = 3;
+            txtUsuario.Location = new Point(67, 124);
+            txtUsuario.Margin = new Padding(2);
+            txtUsuario.Multiline = true;
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(191, 24);
+            txtUsuario.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(96, 178);
+            label3.Location = new Point(67, 107);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(174, 25);
+            label3.Size = new Size(109, 15);
             label3.TabIndex = 4;
             label3.Text = "Nombre de usuario";
             // 
-            // textBox3
+            // txtEmail
             // 
-            textBox3.Location = new Point(96, 292);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(271, 37);
-            textBox3.TabIndex = 5;
+            txtEmail.Location = new Point(67, 175);
+            txtEmail.Margin = new Padding(2);
+            txtEmail.Multiline = true;
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(191, 24);
+            txtEmail.TabIndex = 5;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(96, 264);
+            label4.Location = new Point(67, 158);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(56, 25);
+            label4.Size = new Size(36, 15);
             label4.TabIndex = 6;
             label4.Text = "Email";
             // 
-            // textBox4
+            // txtContraseña
             // 
-            textBox4.Location = new Point(96, 380);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(271, 37);
-            textBox4.TabIndex = 7;
+            txtContraseña.Location = new Point(67, 228);
+            txtContraseña.Margin = new Padding(2);
+            txtContraseña.Multiline = true;
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.PasswordChar = '*';
+            txtContraseña.Size = new Size(191, 24);
+            txtContraseña.TabIndex = 7;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(96, 352);
+            label5.Location = new Point(67, 211);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(106, 25);
+            label5.Size = new Size(66, 15);
             label5.TabIndex = 8;
             label5.Text = "Contraseña";
             // 
-            // textBox5
+            // txtConfirmar
             // 
-            textBox5.Location = new Point(96, 474);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(271, 37);
-            textBox5.TabIndex = 9;
+            txtConfirmar.Location = new Point(67, 284);
+            txtConfirmar.Margin = new Padding(2);
+            txtConfirmar.Multiline = true;
+            txtConfirmar.Name = "txtConfirmar";
+            txtConfirmar.PasswordChar = '*';
+            txtConfirmar.Size = new Size(191, 24);
+            txtConfirmar.TabIndex = 9;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(96, 446);
+            label6.Location = new Point(67, 268);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(191, 25);
+            label6.Size = new Size(121, 15);
             label6.TabIndex = 10;
             label6.Text = "Confirmar contraseña";
             // 
-            // checkBox1
+            // chkTerminos
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(77, 587);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(319, 29);
-            checkBox1.TabIndex = 11;
-            checkBox1.Text = "Acepto los terminos y condiciones?\r\n";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkTerminos.AutoSize = true;
+            chkTerminos.Location = new Point(54, 352);
+            chkTerminos.Margin = new Padding(2);
+            chkTerminos.Name = "chkTerminos";
+            chkTerminos.Size = new Size(213, 19);
+            chkTerminos.TabIndex = 11;
+            chkTerminos.Text = "Acepto los terminos y condiciones?\r\n";
+            chkTerminos.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaptionText;
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(148, 526);
+            button1.Location = new Point(104, 316);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(158, 46);
+            button1.Size = new Size(111, 28);
             button1.TabIndex = 12;
             button1.Text = "Registrar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += btnRegistrar_Click;
             // 
-            // Form2
+            // linkLabel2
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            linkLabel2.AutoSize = true;
+            linkLabel2.LinkColor = Color.Black;
+            linkLabel2.Location = new Point(94, 376);
+            linkLabel2.Margin = new Padding(2, 0, 2, 0);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(125, 15);
+            linkLabel2.TabIndex = 13;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "¿Ya tienes una cuenta?";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
+            // Registro
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(493, 687);
+            ClientSize = new Size(345, 412);
+            Controls.Add(linkLabel2);
             Controls.Add(button1);
-            Controls.Add(checkBox1);
+            Controls.Add(chkTerminos);
             Controls.Add(label6);
-            Controls.Add(textBox5);
+            Controls.Add(txtConfirmar);
             Controls.Add(label5);
-            Controls.Add(textBox4);
+            Controls.Add(txtContraseña);
             Controls.Add(label4);
-            Controls.Add(textBox3);
+            Controls.Add(txtEmail);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtUsuario);
+            Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form2";
+            Margin = new Padding(2);
+            Name = "Registro";
             Text = "Form2";
             ResumeLayout(false);
             PerformLayout();
@@ -193,16 +225,17 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtNombre;
+        private TextBox txtUsuario;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtEmail;
         private Label label4;
-        private TextBox textBox4;
+        private TextBox txtContraseña;
         private Label label5;
-        private TextBox textBox5;
+        private TextBox txtConfirmar;
         private Label label6;
-        private CheckBox checkBox1;
+        private CheckBox chkTerminos;
         private Button button1;
+        private LinkLabel linkLabel2;
     }
 }

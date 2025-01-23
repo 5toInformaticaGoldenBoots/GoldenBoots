@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using GoldenBoots.Properties;
 
 namespace GoldenBoots
 {
@@ -17,39 +19,33 @@ namespace GoldenBoots
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            RepeatFunctions.OpenForm(this, new Registro());
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void iniciar_Click(object sender, EventArgs e)
         {
+            Database db = new Database();
 
-        }
+            object[] data = db.QueryOne($"SELECT * FROM USUARIOS WHERE EMAIL = '{email.Text}'");
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+            if (data[4].ToString() == pass.Text)
+            {
+                MessageBox.Show("Sesión Iniciada Exitosamente", "Sesión Iniciada", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                db.Execute($"UPDATE USUARIOS SET ACTIVO = 0");
+                db.Execute($"UPDATE USUARIOS SET ACTIVO = 1 WHERE EMAIL = '{email.Text}'");
 
-        }
+                RepeatFunctions.OpenForm(this, new Inicio());
+                return;
+            }
 
-        private void Sesiones_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
+            MessageBox.Show("La contraseña o el correo no están correctos", "Datos no encontrados",
+                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
     }
 }
+
+
+    
