@@ -39,5 +39,10 @@ namespace GoldenBoots
         {
             RepeatFunctions.OpenForm(this, new Inicio());
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
