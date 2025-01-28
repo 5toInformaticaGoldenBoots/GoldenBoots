@@ -41,6 +41,7 @@
             label6 = new Label();
             chkTerminos = new CheckBox();
             button1 = new Button();
+            linkLabel2 = new LinkLabel();
             SuspendLayout();
             // 
             // label1
@@ -120,6 +121,7 @@
             txtContraseña.Margin = new Padding(2);
             txtContraseña.Multiline = true;
             txtContraseña.Name = "txtContraseña";
+            txtContraseña.PasswordChar = '*';
             txtContraseña.Size = new Size(191, 24);
             txtContraseña.TabIndex = 7;
             // 
@@ -140,6 +142,7 @@
             txtConfirmar.Margin = new Padding(2);
             txtConfirmar.Multiline = true;
             txtConfirmar.Name = "txtConfirmar";
+            txtConfirmar.PasswordChar = '*';
             txtConfirmar.Size = new Size(191, 24);
             txtConfirmar.TabIndex = 9;
             // 
@@ -178,12 +181,26 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += btnRegistrar_Click;
             // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.LinkColor = Color.Black;
+            linkLabel2.Location = new Point(94, 376);
+            linkLabel2.Margin = new Padding(2, 0, 2, 0);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(125, 15);
+            linkLabel2.TabIndex = 13;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "¿Ya tienes una cuenta?";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
             // Registro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(345, 412);
+            Controls.Add(linkLabel2);
             Controls.Add(button1);
             Controls.Add(chkTerminos);
             Controls.Add(label6);
@@ -219,5 +236,6 @@
         private Label label6;
         private CheckBox chkTerminos;
         private Button button1;
+        private LinkLabel linkLabel2;
     }
 }
