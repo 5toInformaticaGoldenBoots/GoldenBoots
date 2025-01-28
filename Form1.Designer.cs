@@ -34,6 +34,7 @@
             pictureBox2 = new PictureBox();
             label2 = new Label();
             label3 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -46,6 +47,7 @@
             pictureBox1.Size = new Size(1523, 239);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
@@ -53,7 +55,7 @@
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Times New Roman", 36F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(530, 59);
+            label1.Location = new Point(534, 59);
             label1.Name = "label1";
             label1.Size = new Size(495, 81);
             label1.TabIndex = 1;
@@ -78,20 +80,34 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ImageAlign = ContentAlignment.TopRight;
-            label3.Location = new Point(305, 170);
+            label3.Location = new Point(323, 170);
             label3.Name = "label3";
-            label3.Size = new Size(915, 310);
+            label3.Size = new Size(880, 405);
             label3.TabIndex = 4;
             label3.Text = resources.GetString("label3.Text");
             label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.Click += label3_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ActiveCaptionText;
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(0, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 5;
+            button1.Text = "Inicio";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1591, 681);
+            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(pictureBox2);
@@ -99,7 +115,9 @@
             Controls.Add(pictureBox1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "Form1";
-            Text = "Sobre nosotros";
+            Text = resources.GetString("$this.Text");
+            TransparencyKey = Color.Black;
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -113,5 +131,6 @@
         private PictureBox pictureBox2;
         private Label label2;
         private Label label3;
+        private Button button1;
     }
 }
