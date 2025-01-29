@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GoldenBoots
 {
-    public partial class Form1 : Form
+    public partial class Sobrenosotros : Form
     {
-        public Form1()
+        public Sobrenosotros()
         {
             InitializeComponent();
         }
