@@ -39,6 +39,8 @@
             pictureBox4 = new PictureBox();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -48,9 +50,9 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Black;
-            pictureBox1.Location = new Point(0, -1);
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1747, 239);
+            pictureBox1.Size = new Size(1770, 239);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -69,9 +71,10 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(410, 170);
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.Location = new Point(505, 170);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(901, 514);
+            pictureBox2.Size = new Size(681, 472);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
@@ -86,14 +89,14 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Poor Richard", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ImageAlign = ContentAlignment.TopRight;
-            label3.Location = new Point(421, 184);
+            label3.Location = new Point(536, 190);
             label3.Name = "label3";
-            label3.Size = new Size(880, 405);
+            label3.Size = new Size(610, 437);
             label3.TabIndex = 4;
             label3.Text = resources.GetString("label3.Text");
-            label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.TextAlign = ContentAlignment.TopCenter;
             label3.Click += label3_Click;
             // 
             // button1
@@ -106,20 +109,23 @@
             button1.TabIndex = 5;
             button1.Text = "Inicio";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(1354, 275);
+            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox3.Location = new Point(1234, 260);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(332, 382);
+            pictureBox3.Size = new Size(420, 330);
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            pictureBox4.Location = new Point(49, 266);
+            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox4.Location = new Point(53, 260);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(332, 391);
+            pictureBox4.Size = new Size(417, 330);
             pictureBox4.TabIndex = 7;
             pictureBox4.TabStop = false;
             // 
@@ -129,7 +135,7 @@
             label4.BackColor = SystemColors.ActiveCaptionText;
             label4.Font = new Font("Times New Roman", 26F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(123, 170);
+            label4.Location = new Point(163, 170);
             label4.Name = "label4";
             label4.Size = new Size(174, 58);
             label4.TabIndex = 8;
@@ -141,18 +147,42 @@
             label5.BackColor = SystemColors.ActiveCaptionText;
             label5.Font = new Font("Times New Roman", 26F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(1426, 161);
+            label5.Location = new Point(1363, 161);
             label5.Name = "label5";
             label5.Size = new Size(195, 58);
             label5.TabIndex = 9;
             label5.Text = "Valores ";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Poor Richard", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(56, 272);
+            label6.Name = "label6";
+            label6.Size = new Size(400, 150);
+            label6.TabIndex = 10;
+            label6.Text = resources.GetString("label6.Text");
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Poor Richard", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(1252, 272);
+            label7.Name = "label7";
+            label7.Size = new Size(392, 300);
+            label7.TabIndex = 11;
+            label7.Text = resources.GetString("label7.Text");
+            label7.TextAlign = ContentAlignment.BottomCenter;
+            label7.Click += label7_Click;
             // 
             // Sobrenosotros
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1742, 695);
+            ClientSize = new Size(1769, 724);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(pictureBox4);
@@ -188,5 +218,7 @@
         private PictureBox pictureBox4;
         private Label label4;
         private Label label5;
+        private Label label6;
+        private Label label7;
     }
 }

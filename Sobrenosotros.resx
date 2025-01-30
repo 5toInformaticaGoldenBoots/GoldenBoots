@@ -127,12 +127,38 @@ Cada uno de nosotros aporta algo único al proyecto:
 desde el desarrollo tecnológico hasta el diseño, 
 la estrategia y el enfoque en la experiencia del usuario.
  
-juntos compartimos la visión de crear una plataforma que no solo simplifique las compras, 
-sino que también celebre la diversidad de estilos y necesidades de nuestros usuarios.  
-Nuestra misión es brindar acceso fácil y seguro a una amplia variedad de zapatos, 
+juntos compartimos la visión 
+de crear una plataforma que no solo simplifique las compras, 
+sino que también celebre la diversidad 
+de estilos y necesidades de nuestros usuarios.  
+Nuestra misión es brindar acceso fácil y seguro 
+a una amplia variedad de zapatos, 
 combinando innovación tecnológica con un diseño atractivo. 
-Creemos que cada paso cuenta, y queremos acompañarte en cada uno de ellos.
+Creemos que cada paso cuenta, 
+y queremos acompañarte en cada uno de ellos.
 
 </value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Nuestra aplicación tiene como misión 
+proporcionar a los usuarios una experiencia de 
+compra de calzado fácil, rápida y segura, 
+ofreciendo una amplia variedad de modelos, 
+marcas y estilos para todos los 
+gustos y necesidades.</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Calidad – Ofrecer productos de alta calidad 
+que cumplan con las expectativas 
+y necesidades de los clientes.
+
+Innovación – Utilizar tecnología para mejorar 
+la experiencia de compra y 
+facilitar la elección del calzado ideal.
+
+Confianza – Garantizar seguridad 
+en cada compra con métodos 
+de pago confiables y 
+políticas de devolución claras.</value>
   </data>
 </root>
