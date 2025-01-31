@@ -15,7 +15,7 @@ namespace GoldenBoots
         private string _connectionString;
         private SqlConnection _sqlConnection;
 
-        public Database(string server = "localhost,1433", string database = "GoldenBoots", bool trustedConnection = true)
+        public Database(string server = "localhost", string database = "GoldenBoots", bool trustedConnection = true)
         {
             this._connectionString = $"Server={server};Database={database};Trusted_Connection={trustedConnection};TrustServerCertificate=True;";
             this._sqlConnection = new SqlConnection(this._connectionString);
