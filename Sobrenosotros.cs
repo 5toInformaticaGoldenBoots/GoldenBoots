@@ -32,6 +32,11 @@ namespace GoldenBoots
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Inicio());
+        }
+
         private void label7_Click(object sender, EventArgs e)
         {
 

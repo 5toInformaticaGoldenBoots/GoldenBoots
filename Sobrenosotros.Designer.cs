@@ -89,7 +89,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Poor Richard", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Poor Richard", 10F);
             label3.ImageAlign = ContentAlignment.TopRight;
             label3.Location = new Point(536, 190);
             label3.Name = "label3";
