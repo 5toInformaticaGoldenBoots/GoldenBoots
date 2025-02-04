@@ -337,7 +337,7 @@
             label8.Font = new Font("Sitka Small", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.Location = new Point(642, 203);
             label8.Name = "label8";
-            label8.Size = new Size(385, 48);
+            label8.Size = new Size(385, 47);
             label8.TabIndex = 18;
             label8.Text = "Zapatos para Hombre";
             // 
@@ -419,7 +419,7 @@
             label16.ForeColor = Color.DarkOrange;
             label16.Location = new Point(626, 433);
             label16.Name = "label16";
-            label16.Size = new Size(123, 31);
+            label16.Size = new Size(122, 30);
             label16.TabIndex = 28;
             label16.Text = "RD$1,860";
             // 
@@ -460,7 +460,7 @@
             label21.Font = new Font("Sitka Small", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.Location = new Point(626, 546);
             label21.Name = "label21";
-            label21.Size = new Size(63, 23);
+            label21.Size = new Size(63, 21);
             label21.TabIndex = 31;
             label21.Text = "Tallas:";
             // 
@@ -645,6 +645,7 @@
             button1.TabIndex = 53;
             button1.Text = "Añadir a carrito";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox12
             // 
