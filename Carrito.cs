@@ -42,12 +42,12 @@ namespace GoldenBoots
 
         private void button10_Click(object sender, EventArgs e)
         {
-            
+
             MessageBox.Show("Compra realizada con éxito.");
         }
 
 
-        
+
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -60,6 +60,16 @@ namespace GoldenBoots
 
                 pictureBox2.Image = Image.FromFile($"././{rutaImagen}");
             }
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Carrito_Load(object sender, EventArgs e)
+        {
 
         }
     }
