@@ -16,5 +16,15 @@ namespace GoldenBoots
         {
             InitializeComponent();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TarjetaCredito_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
