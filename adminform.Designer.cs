@@ -1,6 +1,9 @@
-﻿namespace GoldenBoots
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
+
+namespace GoldenBoots
 {
-    partial class Form1
+    partial class adminform
     {
         /// <summary>
         /// Required designer variable.
