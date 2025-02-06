@@ -125,7 +125,6 @@
             textBox3.Size = new Size(100, 23);
             textBox3.TabIndex = 8;
             textBox3.Text = "Año";
-            textBox3.TextChanged += this.textBox3_TextChanged;
             // 
             // label4
             // 
