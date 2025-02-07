@@ -95,7 +95,7 @@
             // 
             button10.BackColor = SystemColors.ActiveCaptionText;
             button10.ForeColor = SystemColors.ButtonHighlight;
-            button10.Location = new Point(566, 352);
+            button10.Location = new Point(565, 357);
             button10.Margin = new Padding(2);
             button10.Name = "button10";
             button10.Size = new Size(79, 28);
@@ -108,7 +108,7 @@
             // 
             total.AutoSize = true;
             total.Font = new Font("Segoe UI", 14F);
-            total.Location = new Point(26, 349);
+            total.Location = new Point(24, 360);
             total.Name = "total";
             total.Size = new Size(56, 25);
             total.TabIndex = 35;
@@ -190,6 +190,7 @@
             b1.TabIndex = 49;
             b1.Text = "+";
             b1.UseVisualStyleBackColor = false;
+            b1.Click += ChangeCantity;
             // 
             // pictureBox1
             // 
@@ -253,6 +254,7 @@
             l1.TabIndex = 51;
             l1.Text = "-";
             l1.UseVisualStyleBackColor = false;
+            l1.Click += ChangeCantity;
             // 
             // b2
             // 
@@ -265,6 +267,7 @@
             b2.TabIndex = 52;
             b2.Text = "+";
             b2.UseVisualStyleBackColor = false;
+            b2.Click += ChangeCantity;
             // 
             // l2
             // 
@@ -277,6 +280,7 @@
             l2.TabIndex = 53;
             l2.Text = "-";
             l2.UseVisualStyleBackColor = false;
+            l2.Click += ChangeCantity;
             // 
             // label7
             // 
@@ -349,12 +353,13 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = SystemColors.ActiveCaptionText;
-            label10.Location = new Point(35, 315);
+            label10.Location = new Point(35, 308);
             label10.Margin = new Padding(2, 0, 2, 0);
             label10.Name = "label10";
             label10.Size = new Size(682, 45);
             label10.TabIndex = 61;
             label10.Text = "_______________________________________________________________________________________________________________________________________\r\n\r\n\r\n";
+            label10.Click += label10_Click;
             // 
             // price1
             // 
@@ -429,6 +434,7 @@
             button2.TabIndex = 68;
             button2.Text = "-";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += ChangeCantity;
             // 
             // button5
             // 
@@ -441,6 +447,7 @@
             button5.TabIndex = 69;
             button5.Text = "+";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += ChangeCantity;
             // 
             // button6
             // 
@@ -453,6 +460,7 @@
             button6.TabIndex = 70;
             button6.Text = "+";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += ChangeCantity;
             // 
             // button7
             // 
@@ -463,8 +471,9 @@
             button7.Name = "button7";
             button7.Size = new Size(43, 33);
             button7.TabIndex = 71;
-            button7.Text = "+";
+            button7.Text = "-";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += ChangeCantity;
             // 
             // Carrito
             // 
