@@ -104,7 +104,8 @@
             // NumeroTarjeta
             // 
             NumeroTarjeta.BorderStyle = BorderStyle.FixedSingle;
-            NumeroTarjeta.ForeColor = Color.YellowGreen;
+            NumeroTarjeta.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            NumeroTarjeta.ForeColor = Color.Olive;
             NumeroTarjeta.Location = new Point(347, 243);
             NumeroTarjeta.Margin = new Padding(4, 5, 4, 5);
             NumeroTarjeta.Multiline = true;
@@ -120,9 +121,9 @@
             label3.Location = new Point(87, 465);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(260, 34);
+            label3.Size = new Size(225, 34);
             label3.TabIndex = 6;
-            label3.Text = "Fecha de expiración:\r\n";
+            label3.Text = "Fecha del pedido:\r\n";
             // 
             // textBox2
             // 
