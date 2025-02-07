@@ -208,7 +208,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(150, 42);
             textBox5.TabIndex = 15;
-            textBox5.Text = "3 digitos";
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // pictureBox5
             // 

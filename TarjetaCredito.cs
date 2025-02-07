@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GoldenBoots
 {
     public partial class TarjetaCredito : Form
     {
+        private const char V = '●';
+
         public TarjetaCredito()
         {
             InitializeComponent();
@@ -61,7 +64,22 @@ namespace GoldenBoots
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¡Hola! tu compra a sido realizada con éxito.", "tu compra", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Mostrar mensaje
+            MessageBox.Show("¡Tu compra ha sido realizada con éxito ", "Tu compra", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Limpiar todos los TextBox
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    ((TextBox)control).Clear();
+                }
+            }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            textBox5.PasswordChar = '●';
         }
     }
 }
