@@ -70,10 +70,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Imagen_visa;
-            pictureBox2.Location = new Point(1002, 276);
+            pictureBox2.Location = new Point(993, 276);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(75, 80);
+            pictureBox2.Size = new Size(84, 80);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -81,10 +81,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.mastercard2;
-            pictureBox1.Location = new Point(871, 276);
+            pictureBox1.Location = new Point(858, 276);
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(75, 80);
+            pictureBox1.Size = new Size(88, 80);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -107,7 +107,7 @@
             textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(290, 44);
+            textBox1.Size = new Size(331, 44);
             textBox1.TabIndex = 5;
             // 
             // label3
@@ -132,6 +132,7 @@
             // 
             // textBox3
             // 
+            textBox3.BorderStyle = BorderStyle.FixedSingle;
             textBox3.Location = new Point(357, 537);
             textBox3.Margin = new Padding(4, 5, 4, 5);
             textBox3.Name = "textBox3";
@@ -152,10 +153,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.banreservas__2_;
-            pictureBox3.Location = new Point(1161, 276);
+            pictureBox3.Location = new Point(1152, 276);
             pictureBox3.Margin = new Padding(4, 5, 4, 5);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(77, 80);
+            pictureBox3.Size = new Size(86, 80);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 10;
             pictureBox3.TabStop = false;
@@ -163,10 +164,10 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.bancopopular;
-            pictureBox4.Location = new Point(1298, 276);
+            pictureBox4.Location = new Point(1281, 276);
             pictureBox4.Margin = new Padding(4, 5, 4, 5);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(78, 80);
+            pictureBox4.Size = new Size(95, 80);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 11;
             pictureBox4.TabStop = false;
@@ -186,16 +187,17 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Times New Roman", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.Location = new Point(871, 459);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(284, 40);
+            label6.Size = new Size(258, 34);
             label6.TabIndex = 14;
             label6.Text = "Código de seguridad";
             // 
             // textBox5
             // 
+            textBox5.BorderStyle = BorderStyle.FixedSingle;
             textBox5.Location = new Point(858, 526);
             textBox5.Margin = new Padding(4, 5, 4, 5);
             textBox5.Multiline = true;
@@ -243,7 +245,7 @@
             textBox4.Margin = new Padding(4, 5, 4, 5);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(290, 44);
+            textBox4.Size = new Size(331, 44);
             textBox4.TabIndex = 19;
             // 
             // label8
