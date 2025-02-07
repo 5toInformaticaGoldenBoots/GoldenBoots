@@ -44,6 +44,11 @@ namespace GoldenBoots
             MessageBox.Show("La contraseña o el correo no están correctos", "Datos no encontrados",
                 MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Inicio());
+        }
     }
 }
 

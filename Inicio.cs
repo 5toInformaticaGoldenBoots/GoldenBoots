@@ -8,9 +8,14 @@ namespace GoldenBoots
         {
             InitializeComponent();
             inicio123.Image = Image.FromFile(@"..\..\..\Resources\img inicial.png");
-            lupa12.Image = Image.FromFile(@"..\..\..\Resources\lupa.png");
-            like1.Image = Image.FromFile(@"..\..\..\Resources\like.png");
             carro3.Image = Image.FromFile(@"..\..\..\Resources\carrito.png");
+
+            Database db = new Database();
+
+            if (db.Query("SELECT * FROM USUARIOS WHERE ACTIVO = 1").Count >= 1)
+            {
+                sesion.Text = "Perfil";
+            }
         }
 
 
@@ -100,6 +105,11 @@ namespace GoldenBoots
         private void carro3_Click(object sender, EventArgs e)
         {
             RepeatFunctions.OpenForm(this, new Carrito());
+        }
+
+        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Ofertas());
         }
     }
 }
