@@ -32,18 +32,20 @@ namespace GoldenBoots
             string numero = NumeroTarjeta.Text.Replace(" ", " "); //Obtenemos el numero de tarjeta sin los espacios 
 
             //LImitamos el numero de caracteres a 16
-            if (numero.Length > 16 )
+            if (numero.Length > 16)
             {
-                numero = numero.Substring(0,16);
+                numero = numero.Substring(0, 16);
 
             }
 
 
             //Formateamos el numero con espacios cada 4 digitos
             string formato = "";
-            for (int i = 0; i < numero.Length; i++) {
+            for (int i = 0; i < numero.Length; i++)
+            {
 
-                if (i > 0 && i % 4 == 0) { 
+                if (i > 0 && i % 19 == 0)
+                {
                     formato += " ";
                 }
                 formato += numero[i];
@@ -55,6 +57,11 @@ namespace GoldenBoots
 
             // Colocar el curso al final del texto
             NumeroTarjeta.SelectionStart = NumeroTarjeta.Text.Length;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¡Hola! tu compra a sido realizada con éxito.", "tu compra", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
