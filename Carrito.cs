@@ -13,8 +13,7 @@ namespace GoldenBoots
         public Carrito()
         {
             InitializeComponent();
-            cantityText.Text = Convert.ToString(qone);
-            cantityText2.Text = Convert.ToString(qtwo);
+          
         }
 
         private void ChangeCantity(object sender, EventArgs e)

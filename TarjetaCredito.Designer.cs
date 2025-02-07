@@ -32,7 +32,7 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            NumeroTarjeta = new TextBox();
             label3 = new Label();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -48,6 +48,7 @@
             textBox4 = new TextBox();
             label8 = new Label();
             label9 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -100,15 +101,17 @@
             label2.TabIndex = 4;
             label2.Text = "Numero de tarjeta:";
             // 
-            // textBox1
+            // NumeroTarjeta
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(347, 243);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(331, 44);
-            textBox1.TabIndex = 5;
+            NumeroTarjeta.BorderStyle = BorderStyle.FixedSingle;
+            NumeroTarjeta.ForeColor = Color.YellowGreen;
+            NumeroTarjeta.Location = new Point(347, 243);
+            NumeroTarjeta.Margin = new Padding(4, 5, 4, 5);
+            NumeroTarjeta.Multiline = true;
+            NumeroTarjeta.Name = "NumeroTarjeta";
+            NumeroTarjeta.Size = new Size(331, 44);
+            NumeroTarjeta.TabIndex = 5;
+            NumeroTarjeta.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
@@ -191,9 +194,9 @@
             label6.Location = new Point(871, 459);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(258, 34);
+            label6.Size = new Size(266, 34);
             label6.TabIndex = 14;
-            label6.Text = "Código de seguridad";
+            label6.Text = "Código de seguridad:";
             // 
             // textBox5
             // 
@@ -212,7 +215,7 @@
             pictureBox5.Location = new Point(1083, 526);
             pictureBox5.Margin = new Padding(4, 5, 4, 5);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(204, 42);
+            pictureBox5.Size = new Size(271, 42);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 16;
             pictureBox5.TabStop = false;
@@ -222,7 +225,7 @@
             pictureBox6.BackColor = SystemColors.ActiveCaptionText;
             pictureBox6.Location = new Point(1, 0);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(1538, 137);
+            pictureBox6.Size = new Size(1661, 137);
             pictureBox6.TabIndex = 17;
             pictureBox6.TabStop = false;
             // 
@@ -232,7 +235,7 @@
             label7.BackColor = SystemColors.ActiveCaptionText;
             label7.Font = new Font("Times New Roman", 28F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ButtonHighlight;
-            label7.Location = new Point(582, 45);
+            label7.Location = new Point(562, 45);
             label7.Name = "label7";
             label7.Size = new Size(426, 63);
             label7.TabIndex = 18;
@@ -268,12 +271,25 @@
             label9.TabIndex = 21;
             label9.Text = "Año:";
             // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ActiveCaptionText;
+            button1.Font = new Font("Times New Roman", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(624, 647);
+            button1.Name = "button1";
+            button1.Size = new Size(254, 61);
+            button1.TabIndex = 22;
+            button1.Text = "Comprar ";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // TarjetaCredito
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1650, 750);
+            Controls.Add(button1);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(textBox4);
@@ -289,7 +305,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(NumeroTarjeta);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
@@ -314,7 +330,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox NumeroTarjeta;
         private Label label3;
         private TextBox textBox2;
         private TextBox textBox3;
@@ -330,5 +346,6 @@
         private TextBox textBox4;
         private Label label8;
         private Label label9;
+        private Button button1;
     }
 }

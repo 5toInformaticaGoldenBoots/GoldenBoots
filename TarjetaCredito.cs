@@ -26,5 +26,35 @@ namespace GoldenBoots
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string numero = NumeroTarjeta.Text.Replace(" ", " "); //Obtenemos el numero de tarjeta sin los espacios 
+
+            //LImitamos el numero de caracteres a 16
+            if (numero.Length > 16 )
+            {
+                numero = numero.Substring(0,16);
+
+            }
+
+
+            //Formateamos el numero con espacios cada 4 digitos
+            string formato = "";
+            for (int i = 0; i < numero.Length; i++) {
+
+                if (i > 0 && i % 4 == 0) { 
+                    formato += " ";
+                }
+                formato += numero[i];
+
+            }
+
+            //Actualizamos el texBox con el nùmero formateado 
+            NumeroTarjeta.Text = formato;
+
+            // Colocar el curso al final del texto
+            NumeroTarjeta.SelectionStart = NumeroTarjeta.Text.Length;
+        }
     }
 }
