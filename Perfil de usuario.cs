@@ -16,7 +16,7 @@ namespace GoldenBoots
         {
             InitializeComponent();
             Database db = new Database();
-            object[] user = db.QueryOne("SELECT NOMBRE, APELLIDO, CONTRASEÑA FROM USUARIOS WHERE ACTIVO = 1");
+            object[] user = db.SelectOne("SELECT NOMBRE, APELLIDO, CONTRASEÑA FROM USUARIOS WHERE ACTIVO = 1");
 
             name.Text = user[1].ToString();
             userNombre.Text = user[0].ToString();

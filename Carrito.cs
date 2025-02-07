@@ -1,15 +1,15 @@
-﻿using System.Data;
+using System.Data;
 using GoldenBoots;
 using Microsoft.VisualBasic.ApplicationServices;
 using System.Windows.Forms;
-
-
+using System.Data.SqlClient;
 
 namespace GoldenBoots
 {
 
     public partial class Carrito : Form
     {
+        private object codigoProducto;
 
         public Carrito()
         {
@@ -40,9 +40,44 @@ namespace GoldenBoots
             RepeatFunctions.OpenForm(this, new Inicio());
         }
 
-        private void label11_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
+            
+            MessageBox.Show("Compra realizada con éxito.");
+        }
+
+
+        
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Database db = new Database();
+            var productos = db.Select("select * from CARRITO_DE_COMPRAS WHERE Codigo = algo");
+
+            if (productos.Count > 0)
+            {
+                string rutaImagen = productos[0][0].ToString();
+
+                pictureBox2.Image = Image.FromFile($"././{rutaImagen}");
+            }
 
         }
+    }
+}
+
+public class Database
+{
+    private string connectionString = "Server=DESKTOP-0VETQJN;Database=Base de datos goldenboots actualizada;Integrated Security=True;";
+
+    public DataTable ObtenerProductos()
+    {
+        DataTable dt = new DataTable();
+        using (SqlConnection con = new SqlConnection(connectionString))
+        {
+            string query = "SELECT Id, Nombre, Codigo, Talla, Precio, Imagen FROM Productos";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            da.Fill(dt);
+        }
+        return dt;
     }
 }

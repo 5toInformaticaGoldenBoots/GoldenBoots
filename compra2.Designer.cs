@@ -1,4 +1,4 @@
-﻿namespace GoldenBoots
+namespace GoldenBoots
 {
     partial class compra2
     {
@@ -305,7 +305,7 @@
             label8.Font = new Font("Sitka Small", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.Location = new Point(770, 237);
             label8.Name = "label8";
-            label8.Size = new Size(464, 58);
+            label8.Size = new Size(373, 47);
             label8.TabIndex = 63;
             label8.Text = "Sandalia para damas";
             // 
@@ -384,7 +384,7 @@
             label21.Font = new Font("Sitka Small", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.Location = new Point(747, 703);
             label21.Name = "label21";
-            label21.Size = new Size(80, 28);
+            label21.Size = new Size(63, 21);
             label21.TabIndex = 70;
             label21.Text = "Tallas:";
             // 
@@ -395,7 +395,7 @@
             label16.ForeColor = Color.DarkOrange;
             label16.Location = new Point(747, 556);
             label16.Name = "label16";
-            label16.Size = new Size(155, 39);
+            label16.Size = new Size(121, 30);
             label16.TabIndex = 69;
             label16.Text = "RD$1,448";
             // 
@@ -432,6 +432,7 @@
             button1.TabIndex = 75;
             button1.Text = "Añadir a carrito";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // numericUpDown1
             // 

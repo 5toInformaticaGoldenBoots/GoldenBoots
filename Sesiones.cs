@@ -28,7 +28,7 @@ namespace GoldenBoots
         {
             Database db = new Database();
 
-            object[] data = db.QueryOne($"SELECT * FROM USUARIOS WHERE EMAIL = '{email.Text}'");
+            object[] data = db.SelectOne($"SELECT * FROM USUARIOS WHERE EMAIL = '{email.Text}'");
 
             if (data[4].ToString() == pass.Text)
             {

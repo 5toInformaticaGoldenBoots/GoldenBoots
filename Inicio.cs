@@ -94,7 +94,7 @@ namespace GoldenBoots
         {
             Database db = new Database();
 
-            if (db.Query("SELECT * FROM USUARIOS WHERE ACTIVO = 1").Count > 0)
+            if (db.Select("SELECT * FROM USUARIOS WHERE ACTIVO = 1").Count > 0)
             {
                 RepeatFunctions.OpenForm(this, new perfil());
                 return;

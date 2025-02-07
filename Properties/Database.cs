@@ -1,7 +1,27 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace GoldenBoots
 {
+    internal class RowArray
+    {
+        private object[] _row;
+
+        public RowArray(int length)
+        {
+            this._row = new object[length];
+        }
+    }
+
+    internal class RowList
+    {
+        private List<object> _row = new();
+
+        public RowList()
+        {
+            
+        }
+    }
+
     internal class Database
     {
         private string _connectionString;
@@ -23,32 +43,51 @@ namespace GoldenBoots
             }
         }
 
-        public List<object[]> Query(string query)
+        private void _InsertDataArray(SqlDataReader reader, object[] array)
+        {
+            reader.GetValues(array);
+        }
+
+        private object[] _ReadReaderArray(SqlDataReader reader)
+        {
+            int maxColumns = reader.FieldCount;
+            object[] data = new object[maxColumns];
+
+            this._InsertDataArray(reader, data);
+
+            return data;
+        }
+
+        private Dictionary<string, object> _ReadReaderDict(SqlDataReader reader)
+        {
+            Dictionary<string, object> answer = new();
+
+            for (int i = 0; i < reader.FieldCount; i++)
+            {
+                answer.Add(reader.GetName(i), reader.GetValue(i));
+            }
+
+            return answer;
+        }
+
+        public List<object[]> Select(string query)
         {
             SqlCommand command = new SqlCommand(query, this._sqlConnection);
             
-            List<object[]> result = new();
+            List<object[]> result = [];
 
             using (SqlDataReader reader = command.ExecuteReader())
             {
-                int maxColumns = reader.FieldCount;
-                object[] data = new object[maxColumns];
-
                 while (reader.Read())
                 {
-                    for (int i = 0; i < maxColumns; i++)
-                    {
-                        data[i] = reader.GetValue(i);
-                    }
-
-                    result.Add(data);
+                    result.Add(this._ReadReaderArray(reader));
                 }
             }
 
             return result;
         }
 
-        public object[] QueryOne(string query)
+        public object[] SelectOne(string query)
         {
             SqlCommand command = new SqlCommand(query, this._sqlConnection);
 
@@ -59,11 +98,23 @@ namespace GoldenBoots
                 object[] data = new object[maxColumns];
 
                 reader.Read();
+                return this._ReadReaderArray(reader);
+            }
+        }
 
-                for (int i = 0; i < maxColumns; i++)
+        public List<Dictionary<string, object>> SelectDict(string query)
+        {
+            List<Dictionary<string, object>> answer = [];
+
+            SqlCommand command = new(query, this._sqlConnection);
+
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
                 {
-                    data[i] = reader.GetValue(i);
+                    answer.Add(this._ReadReaderDict(reader));
                 }
+            }
 
                 
 
@@ -74,6 +125,11 @@ namespace GoldenBoots
         public void Close()
         {
             this._sqlConnection.Close();
+        }
+
+        public void Open()
+        {
+            this._sqlConnection.Open();
         }
     }
 }

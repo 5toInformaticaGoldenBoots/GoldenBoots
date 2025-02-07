@@ -1,4 +1,4 @@
-﻿namespace GoldenBoots
+namespace GoldenBoots
 {
     partial class Carrito
     {
@@ -56,15 +56,9 @@
             button10 = new Button();
             total = new Label();
             bvolver = new Button();
-            textBox2 = new TextBox();
-            button1 = new Button();
-            label13 = new Label();
             button2 = new Button();
-            button4 = new Button();
-            textBox3 = new TextBox();
             button5 = new Button();
             button6 = new Button();
-            textBox1 = new TextBox();
             button7 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -74,8 +68,8 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(16, 406);
-            pictureBox1.Margin = new Padding(2, 4, 2, 4);
+            pictureBox1.Location = new Point(12, 245);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(91, 84);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -85,13 +79,14 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(15, 205);
-            pictureBox2.Margin = new Padding(2, 4, 2, 4);
+            pictureBox2.Location = new Point(8, 130);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(96, 81);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label1
             // 
@@ -111,15 +106,15 @@
             label2.Location = new Point(84, 101);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(108, 25);
+            label2.Size = new Size(70, 15);
             label2.TabIndex = 3;
-            label2.Text = "Description";
+            label2.Text = "Descripción";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(578, 101);
+            label3.Location = new Point(402, 70);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(86, 25);
@@ -157,31 +152,77 @@
             label6.Size = new Size(0, 25);
             label6.TabIndex = 7;
             // 
+            // button1
+            // 
+            button1.Location = new Point(268, 134);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(47, 31);
+            button1.TabIndex = 8;
+            button1.Text = "12";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // b1
             // 
             b1.BackColor = SystemColors.ControlText;
             b1.ForeColor = SystemColors.ButtonHighlight;
-            b1.Location = new Point(554, 215);
-            b1.Margin = new Padding(2, 4, 2, 4);
+            b1.Location = new Point(375, 133);
+            b1.Margin = new Padding(2);
             b1.Name = "b1";
-            b1.Size = new Size(61, 54);
+            b1.Size = new Size(42, 32);
             b1.TabIndex = 9;
             b1.Text = "+";
             b1.UseVisualStyleBackColor = false;
             b1.Click += ChangeCantity;
             // 
+            // button4
+            // 
+            button4.Location = new Point(268, 244);
+            button4.Margin = new Padding(2);
+            button4.Name = "button4";
+            button4.Size = new Size(47, 32);
+            button4.TabIndex = 11;
+            button4.Text = "8";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // l1
             // 
             l1.BackColor = SystemColors.ControlText;
             l1.ForeColor = SystemColors.ButtonHighlight;
-            l1.Location = new Point(656, 214);
-            l1.Margin = new Padding(2, 4, 2, 4);
+            l1.Location = new Point(454, 133);
+            l1.Margin = new Padding(2);
             l1.Name = "l1";
             l1.Size = new Size(63, 55);
             l1.TabIndex = 12;
             l1.Text = "-";
             l1.UseVisualStyleBackColor = false;
             l1.Click += ChangeCantity;
+            // 
+            // b2
+            // 
+            b2.BackColor = SystemColors.ControlText;
+            b2.ForeColor = SystemColors.ButtonHighlight;
+            b2.Location = new Point(375, 241);
+            b2.Margin = new Padding(2);
+            b2.Name = "b2";
+            b2.Size = new Size(42, 35);
+            b2.TabIndex = 13;
+            b2.Text = "+";
+            b2.UseVisualStyleBackColor = false;
+            b2.Click += ChangeCantity;
+            // 
+            // l2
+            // 
+            l2.BackColor = SystemColors.ControlText;
+            l2.ForeColor = SystemColors.ButtonHighlight;
+            l2.Location = new Point(460, 239);
+            l2.Margin = new Padding(2);
+            l2.Name = "l2";
+            l2.Size = new Size(46, 38);
+            l2.TabIndex = 15;
+            l2.Text = "-";
+            l2.UseVisualStyleBackColor = false;
+            l2.Click += ChangeCantity;
             // 
             // label7
             // 
@@ -211,7 +252,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(894, 101);
+            label9.Location = new Point(637, 70);
             label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
             label9.Size = new Size(64, 25);
@@ -228,13 +269,25 @@
             button9.Text = "X";
             button9.UseVisualStyleBackColor = true;
             // 
+            // cantityText2
+            // 
+            cantityText2.Location = new Point(415, 243);
+            cantityText2.Margin = new Padding(2);
+            cantityText2.Multiline = true;
+            cantityText2.Name = "cantityText2";
+            cantityText2.Size = new Size(50, 35);
+            cantityText2.TabIndex = 20;
+            cantityText2.Text = "1";
+            cantityText2.TextAlign = HorizontalAlignment.Center;
+            cantityText2.TextChanged += NewTotal;
+            // 
             // cantityText1
             // 
-            cantityText1.Location = new Point(607, 217);
-            cantityText1.Margin = new Padding(2, 4, 2, 4);
+            cantityText1.Location = new Point(415, 134);
+            cantityText1.Margin = new Padding(2);
             cantityText1.Multiline = true;
             cantityText1.Name = "cantityText1";
-            cantityText1.Size = new Size(57, 50);
+            cantityText1.Size = new Size(42, 32);
             cantityText1.TabIndex = 21;
             cantityText1.Text = "1";
             cantityText1.TextAlign = HorizontalAlignment.Center;
@@ -297,18 +350,17 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(115, 217);
+            label11.Location = new Point(80, 142);
             label11.Margin = new Padding(2, 0, 2, 0);
             label11.Name = "label11";
-            label11.Size = new Size(193, 75);
+            label11.Size = new Size(105, 45);
             label11.TabIndex = 29;
-            label11.Text = "Sandalias para damas \r\n\r\n\r\n";
-            label11.Click += label11_Click;
+            label11.Text = "Zapato de hombre\r\n\r\n\r\n";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(115, 242);
+            label12.Location = new Point(80, 158);
             label12.Margin = new Padding(2, 0, 2, 0);
             label12.Name = "label12";
             label12.Size = new Size(209, 25);
@@ -319,17 +371,17 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(111, 416);
+            label15.Location = new Point(80, 250);
             label15.Margin = new Padding(2, 0, 2, 0);
             label15.Name = "label15";
-            label15.Size = new Size(171, 25);
+            label15.Size = new Size(123, 15);
             label15.TabIndex = 31;
-            label15.Text = "Zapato de hombre \r\n";
+            label15.Text = "Plataformas amarillas \r\n";
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(111, 441);
+            label16.Location = new Point(80, 265);
             label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
             label16.Size = new Size(209, 25);
@@ -347,6 +399,7 @@
             button10.TabIndex = 34;
             button10.Text = "Comprar";
             button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
             // total
             // 
@@ -361,8 +414,7 @@
             // 
             // bvolver
             // 
-            bvolver.Location = new Point(-1, -6);
-            bvolver.Margin = new Padding(4, 5, 4, 5);
+            bvolver.Location = new Point(1, -2);
             bvolver.Name = "bvolver";
             bvolver.Size = new Size(108, 39);
             bvolver.TabIndex = 36;
@@ -370,121 +422,52 @@
             bvolver.UseVisualStyleBackColor = true;
             bvolver.Click += bvolver_Click;
             // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(392, 217);
-            textBox2.Margin = new Padding(2, 4, 2, 4);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(65, 50);
-            textBox2.TabIndex = 38;
-            textBox2.Text = "1";
-            textBox2.TextAlign = HorizontalAlignment.Center;
-            // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.ControlText;
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(348, 217);
-            button1.Margin = new Padding(2, 4, 2, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(54, 54);
-            button1.TabIndex = 39;
-            button1.Text = "+";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = SystemColors.ActiveCaptionText;
-            label13.Location = new Point(32, 330);
-            label13.Margin = new Padding(2, 0, 2, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(957, 75);
-            label13.TabIndex = 40;
-            label13.Text = "_______________________________________________________________________________________________________________________________________\r\n\r\n\r\n";
-            // 
             // button2
             // 
             button2.BackColor = SystemColors.ControlText;
             button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(451, 215);
-            button2.Margin = new Padding(2, 4, 2, 4);
+            button2.Location = new Point(312, 134);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
-            button2.Size = new Size(56, 55);
-            button2.TabIndex = 41;
+            button2.Size = new Size(38, 32);
+            button2.TabIndex = 37;
             button2.Text = "-";
             button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = SystemColors.ControlText;
-            button4.ForeColor = SystemColors.ButtonHighlight;
-            button4.Location = new Point(554, 411);
-            button4.Margin = new Padding(2, 4, 2, 4);
-            button4.Name = "button4";
-            button4.Size = new Size(61, 54);
-            button4.TabIndex = 42;
-            button4.Text = "+";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(607, 413);
-            textBox3.Margin = new Padding(2, 4, 2, 4);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(57, 50);
-            textBox3.TabIndex = 43;
-            textBox3.Text = "1";
-            textBox3.TextAlign = HorizontalAlignment.Center;
             // 
             // button5
             // 
             button5.BackColor = SystemColors.ControlText;
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(656, 409);
-            button5.Margin = new Padding(2, 4, 2, 4);
+            button5.Location = new Point(230, 134);
+            button5.Margin = new Padding(2);
             button5.Name = "button5";
-            button5.Size = new Size(63, 55);
-            button5.TabIndex = 44;
-            button5.Text = "-";
+            button5.Size = new Size(39, 31);
+            button5.TabIndex = 38;
+            button5.Text = "+";
             button5.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
             button6.BackColor = SystemColors.ControlText;
             button6.ForeColor = SystemColors.ButtonHighlight;
-            button6.Location = new Point(341, 416);
-            button6.Margin = new Padding(2, 4, 2, 4);
+            button6.Location = new Point(230, 243);
+            button6.Margin = new Padding(2);
             button6.Name = "button6";
-            button6.Size = new Size(61, 54);
-            button6.TabIndex = 45;
+            button6.Size = new Size(43, 33);
+            button6.TabIndex = 39;
             button6.Text = "+";
             button6.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(400, 416);
-            textBox1.Margin = new Padding(2, 4, 2, 4);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(57, 50);
-            textBox1.TabIndex = 46;
-            textBox1.Text = "1";
-            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // button7
             // 
             button7.BackColor = SystemColors.ControlText;
             button7.ForeColor = SystemColors.ButtonHighlight;
-            button7.Location = new Point(451, 413);
-            button7.Margin = new Padding(2, 4, 2, 4);
+            button7.Location = new Point(312, 243);
+            button7.Margin = new Padding(2);
             button7.Name = "button7";
-            button7.Size = new Size(63, 55);
-            button7.TabIndex = 47;
-            button7.Text = "-";
+            button7.Size = new Size(43, 33);
+            button7.TabIndex = 40;
+            button7.Text = "+";
             button7.UseVisualStyleBackColor = false;
             // 
             // Carrito
@@ -492,17 +475,11 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(1051, 734);
+            ClientSize = new Size(736, 440);
             Controls.Add(button7);
-            Controls.Add(textBox1);
             Controls.Add(button6);
             Controls.Add(button5);
-            Controls.Add(textBox3);
-            Controls.Add(button4);
             Controls.Add(button2);
-            Controls.Add(label13);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
             Controls.Add(bvolver);
             Controls.Add(total);
             Controls.Add(button10);
@@ -532,7 +509,7 @@
             Controls.Add(b1);
             Margin = new Padding(2, 4, 2, 4);
             Name = "Carrito";
-            Text = "Form3";
+            Text = " ";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -574,11 +551,7 @@
         private Button button10;
         private Label total;
         private Button bvolver;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label13;
         private Button button2;
-        private TextBox textBox3;
         private Button button5;
         private Button button6;
         private Button button7;
