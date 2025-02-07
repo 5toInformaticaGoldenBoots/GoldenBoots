@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -133,14 +133,26 @@
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bancopopular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancopopular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="co21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\co21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="like" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\like.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="like" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\like.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="za11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mastercard2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mastercard2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="za13f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\za13f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="za12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +199,9 @@
   <data name="pen-to-square-regular1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen-to-square-regular1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="za17f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\za17f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="za11f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za11f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -213,6 +228,9 @@
   </data>
   <data name="za16f" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za16f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\co43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="za2f" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za2f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,8 +328,8 @@
   <data name="20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="co43" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\co43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="banreservas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banreservas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="za18f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za18f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,6 +361,9 @@
   <data name="encabezado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\encabezado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Imagen visa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagen visa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -366,6 +387,9 @@
   </data>
   <data name="co51" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\co51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mastercard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mastercard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="za13f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\za13f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
