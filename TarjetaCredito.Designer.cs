@@ -121,9 +121,9 @@
             label3.Location = new Point(87, 465);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(225, 34);
+            label3.Size = new Size(260, 68);
             label3.TabIndex = 6;
-            label3.Text = "Fecha del pedido:\r\n";
+            label3.Text = "Fecha de expiración:\r\n\r\n";
             // 
             // textBox2
             // 
@@ -236,7 +236,7 @@
             label7.BackColor = SystemColors.ActiveCaptionText;
             label7.Font = new Font("Times New Roman", 28F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ButtonHighlight;
-            label7.Location = new Point(562, 45);
+            label7.Location = new Point(534, 48);
             label7.Name = "label7";
             label7.Size = new Size(426, 63);
             label7.TabIndex = 18;

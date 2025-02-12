@@ -72,7 +72,7 @@ namespace GoldenBoots
             {
                 if (control is TextBox)
                 {
-                    ((TextBox)control).Clear();
+                    control.Clear();
                 }
             }
         }
