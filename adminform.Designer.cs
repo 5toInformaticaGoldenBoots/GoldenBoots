@@ -44,7 +44,7 @@ namespace GoldenBoots
             button2 = new Button();
             button1 = new Button();
             txtBuscar = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            button7 = new Button();
             ((System.ComponentModel.ISupportInitialize)datos).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -165,20 +165,30 @@ namespace GoldenBoots
             button1.TabIndex = 0;
             button1.Text = "Productos";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // txtBuscar
             // 
             txtBuscar.Location = new Point(11, 9);
             txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(100, 23);
+            txtBuscar.Size = new Size(100, 27);
             txtBuscar.TabIndex = 2;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(894, 1);
+            button7.Name = "button7";
+            button7.Size = new Size(94, 29);
+            button7.TabIndex = 3;
+            button7.Text = "Volver";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // adminform
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(994, 594);
+            Controls.Add(button7);
             Controls.Add(txtBuscar);
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
@@ -205,5 +215,6 @@ namespace GoldenBoots
         private DataGridViewTextBoxColumn talla;
         private DataGridViewTextBoxColumn stock;
         private TextBox txtBuscar;
+        private Button button7;
     }
 }

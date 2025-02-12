@@ -63,7 +63,7 @@ namespace GoldenBoots
 
         private void button10_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Compra realizada con éxito.");
+            RepeatFunctions.OpenForm(this, new TarjetaCredito());
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

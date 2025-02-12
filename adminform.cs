@@ -100,5 +100,10 @@ namespace GoldenBoots
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Inicio());
+        }
     }
 }
