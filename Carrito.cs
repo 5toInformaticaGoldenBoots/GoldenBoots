@@ -92,5 +92,35 @@ namespace GoldenBoots
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+            Database db = new Database();
+            var productos = db.Select("SELECT * FROM CARRITO_DE_COMPRAS WHERE Codigo = 'algo'");
+
+            if (productos.Count > 0 && productos[0].Length > 0)
+            {
+                string rutaImagen = productos[0][0].ToString();
+                try
+                {
+                    pictureBox2.Image = Image.FromFile("././" + rutaImagen);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al cargar la imagen: " + ex.Message);
+                }
+            }
+        }
+
+        private void cantityText2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Carrito_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

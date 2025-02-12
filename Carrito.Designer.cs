@@ -202,6 +202,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 41;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -326,6 +327,7 @@
             cantityText2.TabIndex = 58;
             cantityText2.Text = "1";
             cantityText2.TextAlign = HorizontalAlignment.Center;
+            cantityText2.TextChanged += cantityText2_TextChanged;
             // 
             // cantityText1
             // 
@@ -520,6 +522,7 @@
             Margin = new Padding(2);
             Name = "Carrito";
             Text = " ";
+            Load += Carrito_Load_1;
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
