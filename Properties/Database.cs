@@ -116,10 +116,7 @@ namespace GoldenBoots
                 }
             }
 
-                
-
-                return data;
-            }
+            return answer;
         }
 
         public void Close()

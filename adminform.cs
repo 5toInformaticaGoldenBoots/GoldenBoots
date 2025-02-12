@@ -21,14 +21,13 @@ namespace GoldenBoots
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            string nombre = txtNombre.Text.Trim();
+            string nombre = "";
 
             if (!string.IsNullOrEmpty(nombre))
             {
                 try
                 {
                     string query = "INSERT INTO Clientes (Nombre) VALUES (@nombre)";
-                    db.Execute(query, new Dictionary<string, object> { { "@nombre", nombre } });
                     MessageBox.Show("Cliente guardado correctamente.");
                     CargarClientes(); // Refrescar lista
                 }
@@ -45,18 +44,18 @@ namespace GoldenBoots
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txtBuscar.Text, out int id))
+            if (int.TryParse("", out int id))
             {
                 string query = "SELECT Nombre FROM Clientes WHERE Id = @id";
-                object[] cliente = db.QueryOne(query, new Dictionary<string, object> { { "@id", id } });
+                object[] cliente = db.SelectOne(query);
 
                 if (cliente != null)
                 {
-                    lblResultado.Text = $"Nombre: {cliente[0]}";
+                    datos.Text = $"Nombre: {cliente[0]}";
                 }
                 else
                 {
-                    lblResultado.Text = "Cliente no encontrado.";
+                    datos.Text = "Cliente no encontrado.";
                 }
             }
             else
@@ -67,13 +66,13 @@ namespace GoldenBoots
 
         private void CargarClientes()
         {
-            dataGridView1.Rows.Clear(); // Limpia el DataGridView
+            datos.Rows.Clear(); // Limpia el DataGridView
 
-            List<object[]> clientes = db.Query("SELECT Id, Nombre FROM Clientes");
+            List<object[]> clientes = db.Select("SELECT Id, Nombre FROM Clientes");
 
             foreach (var fila in clientes)
             {
-                dataGridView1.Rows.Add(fila); // Agrega cada fila al DataGridView
+                datos.Rows.Add(fila); // Agrega cada fila al DataGridView
             }
         }
 

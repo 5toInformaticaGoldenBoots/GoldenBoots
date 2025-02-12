@@ -10,6 +10,7 @@ namespace GoldenBoots
     public partial class Carrito : Form
     {
         private object codigoProducto;
+        private Database db = new();
 
         public Carrito()
         {
@@ -62,22 +63,5 @@ namespace GoldenBoots
             }
 
         }
-    }
-}
-
-public class Database
-{
-    private string connectionString = "Server=DESKTOP-0VETQJN;Database=Base de datos goldenboots actualizada;Integrated Security=True;";
-
-    public DataTable ObtenerProductos()
-    {
-        DataTable dt = new DataTable();
-        using (SqlConnection con = new SqlConnection(connectionString))
-        {
-            string query = "SELECT Id, Nombre, Codigo, Talla, Precio, Imagen FROM Productos";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            da.Fill(dt);
-        }
-        return dt;
     }
 }
