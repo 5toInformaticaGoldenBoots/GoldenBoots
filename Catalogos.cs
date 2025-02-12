@@ -20,10 +20,10 @@ namespace GoldenBoots
         {
             InitializeComponent();
             //Consigue todos los zapatos de la db
-            
+
             this.UpdateSize(null, EventArgs.Empty);
-            this.GenerateItems("SELECT * FROM ZAPATOS");
             textBox1.Text = defaultText;
+            this.GenerateItems("SELECT * FROM ZAPATOS");
             //this.OnMaximumSizeChanged += UpdateSize;
 
             //Label test = new Label();
@@ -40,7 +40,7 @@ namespace GoldenBoots
             //this.Controls.Add(test);
 
             //recorre cada zapato de la lista
-            
+
         }
 
         public void UpdateSize(object sender, EventArgs args)
@@ -166,6 +166,11 @@ namespace GoldenBoots
             //dataGridView1.DataSource = data;
             //dataGridView1.DataMember = "ZAPATOS";
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Inicio());
         }
     }
 };

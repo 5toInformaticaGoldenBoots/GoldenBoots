@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GoldenBoots
 {
@@ -70,9 +69,9 @@ namespace GoldenBoots
             // Limpiar todos los TextBox
             foreach (Control control in this.Controls)
             {
-                if (control is TextBox)
+                if (control is TextBox obj)
                 {
-                    control.Clear();
+                    obj.Clear();
                 }
             }
         }
@@ -80,6 +79,11 @@ namespace GoldenBoots
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
             textBox5.PasswordChar = '●';
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

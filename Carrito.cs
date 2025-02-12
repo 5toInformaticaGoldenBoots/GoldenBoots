@@ -124,5 +124,10 @@ namespace GoldenBoots
         {
 
         }
+
+        private void total_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
