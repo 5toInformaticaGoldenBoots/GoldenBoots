@@ -21,14 +21,14 @@ namespace GoldenBoots
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            string nombre = txtNombre.Text.Trim();
+            string nombre = txtBuscar.Text.Trim();
 
             if (!string.IsNullOrEmpty(nombre))
             {
                 try
                 {
                     string query = "INSERT INTO Clientes (Nombre) VALUES (@nombre)";
-                    db.Execute(query, new Dictionary<string, object> { { "@nombre", nombre } });
+                    db.Execute(query);
                     MessageBox.Show("Cliente guardado correctamente.");
                     CargarClientes(); // Refrescar lista
                 }
@@ -48,15 +48,18 @@ namespace GoldenBoots
             if (int.TryParse(txtBuscar.Text, out int id))
             {
                 string query = "SELECT Nombre FROM Clientes WHERE Id = @id";
-                object[] cliente = db.QueryOne(query, new Dictionary<string, object> { { "@id", id } });
+                object[] cliente = db.QueryOne(query);
 
                 if (cliente != null)
                 {
-                    lblResultado.Text = $"Nombre: {cliente[0]}";
+                    string text = $"Nombre: {cliente[0]}";
+                    dataGridView1.Rows.Add();
+                    
                 }
                 else
                 {
-                    lblResultado.Text = "Cliente no encontrado.";
+                    string texto = "Cliente no encontrado.";
+                    MessageBox.Show("Error", texto, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
