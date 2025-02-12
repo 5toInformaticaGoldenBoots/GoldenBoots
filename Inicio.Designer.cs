@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label1 = new Label();
+            carro3 = new PictureBox();
+            label6 = new Label();
             linkLabel6 = new LinkLabel();
             label10 = new Label();
             linkLabel5 = new LinkLabel();
@@ -47,15 +50,12 @@
             sesion = new Label();
             panel2 = new Panel();
             label8 = new Label();
-            carro3 = new PictureBox();
             inicio123 = new PictureBox();
             label17 = new Label();
             label18 = new Label();
-            label1 = new Label();
-            label6 = new Label();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)carro3).BeginInit();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)inicio123).BeginInit();
             SuspendLayout();
             // 
@@ -91,6 +91,37 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(858, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(66, 23);
+            label1.TabIndex = 22;
+            label1.Text = "Carrito";
+            label1.Click += carro3_Click;
+            // 
+            // carro3
+            // 
+            carro3.Location = new Point(800, 12);
+            carro3.Name = "carro3";
+            carro3.Size = new Size(52, 42);
+            carro3.SizeMode = PictureBoxSizeMode.Zoom;
+            carro3.TabIndex = 0;
+            carro3.TabStop = false;
+            carro3.Click += carro3_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(925, 20);
+            label6.Name = "label6";
+            label6.Size = new Size(16, 25);
+            label6.TabIndex = 21;
+            label6.Text = "|";
+            // 
             // linkLabel6
             // 
             linkLabel6.AutoSize = true;
@@ -125,7 +156,7 @@
             linkLabel5.TabIndex = 18;
             linkLabel5.TabStop = true;
             linkLabel5.Text = "Novedades";
-            linkLabel5.LinkClicked += linkLabel5_LinkClicked;
+            linkLabel5.Click += OpenCatalog;
             // 
             // linkLabel4
             // 
@@ -138,7 +169,7 @@
             linkLabel4.TabIndex = 17;
             linkLabel4.TabStop = true;
             linkLabel4.Text = "Niñas";
-            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
+            linkLabel4.Click += OpenCatalog;
             // 
             // linkLabel3
             // 
@@ -151,7 +182,7 @@
             linkLabel3.TabIndex = 16;
             linkLabel3.TabStop = true;
             linkLabel3.Text = "Niños";
-            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            linkLabel3.Click += OpenCatalog;
             // 
             // linkLabel2
             // 
@@ -164,7 +195,7 @@
             linkLabel2.TabIndex = 15;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Mujer";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked_1;
+            linkLabel2.Click += OpenCatalog;
             // 
             // linkLabel1
             // 
@@ -177,7 +208,7 @@
             linkLabel1.TabIndex = 14;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Hombre";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            linkLabel1.Click += OpenCatalog;
             // 
             // label15
             // 
@@ -290,23 +321,9 @@
             label8.TabIndex = 4;
             label8.Text = "GooldentBoots";
             // 
-            // carro3
-            // 
-            carro3.Image = Properties.Resources.carrito;
-            carro3.Location = new Point(800, 12);
-            carro3.Name = "carro3";
-            carro3.Size = new Size(52, 42);
-            carro3.SizeMode = PictureBoxSizeMode.Zoom;
-            carro3.TabIndex = 0;
-            carro3.TabStop = false;
-            carro3.Click += carro3_Click;
-            // 
             // inicio123
             // 
             inicio123.BackColor = Color.Transparent;
-            inicio123.ErrorImage = Properties.Resources.img_inicial;
-            inicio123.Image = Properties.Resources.img_inicial;
-            inicio123.InitialImage = Properties.Resources.img_inicial;
             inicio123.Location = new Point(0, 205);
             inicio123.Name = "inicio123";
             inicio123.Size = new Size(1284, 386);
@@ -336,27 +353,6 @@
             label18.Text = "Encuentra el par perfecto para cada paso de tu vida";
             label18.Click += label18_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(858, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(66, 23);
-            label1.TabIndex = 22;
-            label1.Text = "Carrito";
-            label1.Click += carro3_Click;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(925, 20);
-            label6.Name = "label6";
-            label6.Size = new Size(16, 25);
-            label6.TabIndex = 21;
-            label6.Text = "|";
-            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
@@ -374,9 +370,9 @@
             Text = "pagina de inicio";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)carro3).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)carro3).EndInit();
             ((System.ComponentModel.ISupportInitialize)inicio123).EndInit();
             ResumeLayout(false);
             PerformLayout();

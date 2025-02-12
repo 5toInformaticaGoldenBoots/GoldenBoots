@@ -16,13 +16,14 @@ namespace GoldenBoots
     {
         Database db = new Database();
 
-        public Catalogos()
+        public Catalogos(string defaultText = "")
         {
             InitializeComponent();
             //Consigue todos los zapatos de la db
             
             this.UpdateSize(null, EventArgs.Empty);
             this.GenerateItems("SELECT * FROM ZAPATOS");
+            textBox1.Text = defaultText;
             //this.OnMaximumSizeChanged += UpdateSize;
 
             //Label test = new Label();
@@ -57,7 +58,13 @@ namespace GoldenBoots
         {
             dgvZapatos.Controls.Clear();
 
-            List<object[]> shoes = db.Select(query);
+            List<object[]> shoes = new();
+
+            try
+            {
+                shoes = db.Select(query);
+            }
+            catch { }
 
             for (int i = 0; i < shoes.Count; i++)
             {

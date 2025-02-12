@@ -1,4 +1,6 @@
 using GoldenBoots.Properties;
+using Microsoft.IdentityModel.Tokens;
+using System.Linq;
 
 namespace GoldenBoots
 {
@@ -12,7 +14,7 @@ namespace GoldenBoots
 
             Database db = new Database();
 
-            if (db.Query("SELECT * FROM USUARIOS WHERE ACTIVO = 1").Count >= 1)
+            if (db.Select("SELECT * FROM USUARIOS WHERE ACTIVO = 1").Count >= 1)
             {
                 sesion.Text = "Perfil";
             }
@@ -44,62 +46,33 @@ namespace GoldenBoots
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void OpenCatalog(object sender, EventArgs e)
         {
-
+            LinkLabel obj = sender as LinkLabel;
             // Crear una nueva instancia del formulario Catalogo5
-            Catalogo5 catalogoForm = new Catalogo5();
+            Catalogos catalogoForm = new Catalogos(obj.Text);
 
-            // Mostrar el formulario Catalogo5
-            catalogoForm.Show();
-
-            // Opcional: Ocultar el formulario actual (Inicio)
-            this.Hide();
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            catalogo4 catalogoForm = new catalogo4();
-            catalogoForm.Show();
-            this.Hide();
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            catalogo3 catalogoForm = new catalogo3();
-            catalogoForm.Show();
-            this.Hide();
-        }
-
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            catalogo2 catalogoForm = new catalogo2();
-            catalogoForm.Show();
-            this.Hide();
-        }
-
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            catalogo catalogoForm = new catalogo();
-            catalogoForm.Show();
-            this.Hide();
+            RepeatFunctions.OpenForm(this, catalogoForm);
         }
 
         private void OpenRegister(object sender, EventArgs e)
         {
             Database db = new Database();
+            object[]? data = db.SelectOne("SELECT * FROM USUARIOS WHERE ACTIVO = 1");
 
-            if (db.Select("SELECT * FROM USUARIOS WHERE ACTIVO = 1").Count > 0)
+            if (data.IsNullOrEmpty())
             {
-                RepeatFunctions.OpenForm(this, new perfil());
+                RepeatFunctions.OpenForm(this, new Sesiones());
                 return;
             }
-            RepeatFunctions.OpenForm(this, new Sesiones());
+            
+            if (Convert.ToBoolean(data[7]))
+            {
+                RepeatFunctions.OpenForm(this, new adminform());
+                return;
+            }
+
+            RepeatFunctions.OpenForm(this, new perfil());
         }
 
         private void carro3_Click(object sender, EventArgs e)
