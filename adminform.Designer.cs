@@ -1,4 +1,4 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+using static System.Net.Mime.MediaTypeNames;
 using System.Windows.Forms;
 
 namespace GoldenBoots
@@ -43,6 +43,8 @@ namespace GoldenBoots
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            txtBuscar = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)datos).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -111,7 +113,6 @@ namespace GoldenBoots
             button6.TabIndex = 5;
             button6.Text = "Eliminar";
             button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
             // 
             // button5
             // 
@@ -164,12 +165,21 @@ namespace GoldenBoots
             button1.TabIndex = 0;
             button1.Text = "Productos";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // txtBuscar
+            // 
+            txtBuscar.Location = new Point(11, 9);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(100, 23);
+            txtBuscar.TabIndex = 2;
             // 
             // adminform
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtBuscar);
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "adminform";
@@ -177,6 +187,7 @@ namespace GoldenBoots
             ((System.ComponentModel.ISupportInitialize)datos).EndInit();
             panel1.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -193,5 +204,6 @@ namespace GoldenBoots
         private DataGridViewTextBoxColumn precio;
         private DataGridViewTextBoxColumn talla;
         private DataGridViewTextBoxColumn stock;
+        private TextBox txtBuscar;
     }
 }
