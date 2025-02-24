@@ -1,8 +1,10 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace GoldenBoots
 {
-    internal class Database
+    public class Database : IDisposable
     {
         private string _connectionString;
         private SqlConnection _sqlConnection;
@@ -14,66 +16,77 @@ namespace GoldenBoots
             this._sqlConnection.Open();
         }
 
-        public void Execute(string query)
+        public void Dispose()
         {
-
-            using (SqlCommand command = new SqlCommand(query, this._sqlConnection))
+            if (_sqlConnection != null)
             {
-                command.ExecuteNonQuery();
+                _sqlConnection.Close();
+                _sqlConnection.Dispose();
             }
         }
 
-        public List<object[]> Query(string query)
+        public void Execute(string query, Dictionary<string, object> parameters = null)
         {
-            SqlCommand command = new SqlCommand(query, this._sqlConnection);
-            
-            List<object[]> result = new();
-
-            using (SqlDataReader reader = command.ExecuteReader())
+            using (var cmd = new SqlCommand(query, _sqlConnection))
             {
-                int maxColumns = reader.FieldCount;
-                object[] data = new object[maxColumns];
-
-                while (reader.Read())
+                if (parameters != null)
                 {
-                    for (int i = 0; i < maxColumns; i++)
+                    foreach (var param in parameters)
                     {
-                        data[i] = reader.GetValue(i);
+                        cmd.Parameters.AddWithValue($"@{param.Key}", param.Value);
                     }
+                }
+                cmd.ExecuteNonQuery();
+            }
+        }
 
-                    result.Add(data);
+        public List<object[]> Query(string query, Dictionary<string, object> parameters = null)
+        {
+            List<object[]> result = new List<object[]>();
+            using (SqlCommand command = new SqlCommand(query, _sqlConnection))
+            {
+                if (parameters != null)
+                {
+                    foreach (var param in parameters)
+                    {
+                        command.Parameters.AddWithValue($"@{param.Key}", param.Value);
+                    }
+                }
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        object[] data = new object[reader.FieldCount];
+                        reader.GetValues(data);
+                        result.Add(data);
+                    }
                 }
             }
-
             return result;
         }
 
-        public object[] QueryOne(string query)
+        public object[] QueryOne(string query, Dictionary<string, object> parameters = null)
         {
-            SqlCommand command = new SqlCommand(query, this._sqlConnection);
-
-            using (SqlDataReader reader = command.ExecuteReader())
+            using (SqlCommand command = new SqlCommand(query, _sqlConnection))
             {
-                int maxColumns = reader.FieldCount;
-
-                object[] data = new object[maxColumns];
-
-                reader.Read();
-
-                for (int i = 0; i < maxColumns; i++)
+                if (parameters != null)
                 {
-                    data[i] = reader.GetValue(i);
+                    foreach (var param in parameters)
+                    {
+                        command.Parameters.AddWithValue($"@{param.Key}", param.Value);
+                    }
                 }
-
-                
-
-                return data;
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        object[] data = new object[reader.FieldCount];
+                        reader.GetValues(data);
+                        return data;
+                    }
+                }
             }
-        }
-
-        public void Close()
-        {
-            this._sqlConnection.Close();
+            return null;
         }
     }
 }

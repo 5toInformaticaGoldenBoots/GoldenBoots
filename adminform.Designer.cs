@@ -52,31 +52,40 @@ namespace GoldenBoots
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nombre, precio, talla, stock });
-            dataGridView1.Location = new Point(104, 85);
+            dataGridView1.Location = new Point(119, 113);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(433, 259);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(495, 345);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // nombre
             // 
             nombre.HeaderText = "Nombre";
+            nombre.MinimumWidth = 6;
             nombre.Name = "nombre";
+            nombre.Width = 125;
             // 
             // precio
             // 
             precio.HeaderText = "Precio";
+            precio.MinimumWidth = 6;
             precio.Name = "precio";
+            precio.Width = 125;
             // 
             // talla
             // 
             talla.HeaderText = "Talla";
+            talla.MinimumWidth = 6;
             talla.Name = "talla";
+            talla.Width = 125;
             // 
             // stock
             // 
             stock.HeaderText = "Stock";
+            stock.MinimumWidth = 6;
             stock.Name = "stock";
+            stock.Width = 125;
             // 
             // panel1
             // 
@@ -87,25 +96,29 @@ namespace GoldenBoots
             panel1.Controls.Add(dataGridView1);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(71, 33);
+            panel1.Location = new Point(81, 44);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(637, 391);
+            panel1.Size = new Size(728, 521);
             panel1.TabIndex = 1;
             // 
             // button6
             // 
-            button6.Location = new Point(462, 35);
+            button6.Location = new Point(528, 47);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Size = new Size(75, 23);
+            button6.Size = new Size(86, 31);
             button6.TabIndex = 5;
             button6.Text = "Eliminar";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(282, 35);
+            button5.Location = new Point(322, 47);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(75, 23);
+            button5.Size = new Size(86, 31);
             button5.TabIndex = 4;
             button5.Text = "Editar";
             button5.UseVisualStyleBackColor = true;
@@ -113,9 +126,10 @@ namespace GoldenBoots
             // 
             // button4
             // 
-            button4.Location = new Point(104, 35);
+            button4.Location = new Point(119, 47);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(75, 23);
+            button4.Size = new Size(86, 31);
             button4.TabIndex = 3;
             button4.Text = "Agregar";
             button4.UseVisualStyleBackColor = true;
@@ -123,27 +137,32 @@ namespace GoldenBoots
             // 
             // button3
             // 
-            button3.Location = new Point(3, 285);
+            button3.Location = new Point(3, 380);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(90, 31);
+            button3.Size = new Size(103, 41);
             button3.TabIndex = 2;
             button3.Text = "Clientes";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(3, 205);
+            button2.Location = new Point(3, 273);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(90, 31);
+            button2.Size = new Size(103, 41);
             button2.TabIndex = 1;
             button2.Text = "Ventas";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(3, 127);
+            button1.Location = new Point(3, 169);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(90, 31);
+            button1.Size = new Size(103, 41);
             button1.TabIndex = 0;
             button1.Text = "Productos";
             button1.UseVisualStyleBackColor = true;
@@ -151,18 +170,20 @@ namespace GoldenBoots
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(11, 9);
+            txtBuscar.Location = new Point(13, 12);
+            txtBuscar.Margin = new Padding(3, 4, 3, 4);
             txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(100, 23);
+            txtBuscar.Size = new Size(114, 27);
             txtBuscar.TabIndex = 2;
             // 
             // adminform
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(txtBuscar);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "adminform";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
