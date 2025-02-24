@@ -51,6 +51,7 @@
             saveButton.TabIndex = 15;
             saveButton.Text = "Guardar";
             saveButton.UseVisualStyleBackColor = true;
+            saveButton.Click += saveButton_Click;
             // 
             // panelFields
             // 

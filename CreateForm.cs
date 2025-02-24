@@ -150,5 +150,10 @@ namespace GoldenBoots
                 MessageBox.Show($"Error al crear el registro: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
