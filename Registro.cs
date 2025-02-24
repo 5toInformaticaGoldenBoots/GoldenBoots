@@ -61,14 +61,28 @@ namespace GoldenBoots
 
             try
             {
-                db.Execute($"INSERT INTO USUARIOS VALUES ('{usuario}', '{nombre}', '{email}', '{contraseña}', 1, 1)");
+                var parameters = new Dictionary<string, object>
+        {
+            { "@usuario", usuario },
+            { "@nombre", nombre },
+            { "@email", email },
+            { "@contraseña", contraseña }
+        };
+
+                db.Execute("INSERT INTO USUARIOS (USUARIO, NOMBRE, EMAIL, CONTRASEÑA, ACTIVO, TERMINOS) VALUES (@usuario, @nombre, @email, @contraseña, 1, 1)", parameters);
+
                 try
                 {
-                    db.Execute($"UPDATE USUARIOS SET ACTIVO = 0 WHERE NOMBRE != {usuario}");
+                    var updateParameters = new Dictionary<string, object>
+            {
+                { "@usuario", usuario }
+            };
+
+                    db.Execute("UPDATE USUARIOS SET ACTIVO = 0 WHERE NOMBRE != @usuario", updateParameters);
                 }
                 catch (Exception ex)
                 {
-
+                    // Handle exception
                 }
             }
             catch (Exception ex)

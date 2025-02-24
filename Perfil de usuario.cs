@@ -44,14 +44,16 @@ namespace GoldenBoots
         {
             PictureBox obj = sender as PictureBox;
 
-            TextBox toChange = (new Control[] { name, userNombre, pass })[int.Parse(obj.Name.Substring(obj.Name.Length - 1))-1] as TextBox;
+            TextBox toChange = (new Control[] { name, userNombre, pass })[int.Parse(obj.Name.Substring(obj.Name.Length - 1)) - 1] as TextBox;
 
             Database db = new Database();
 
-            db.Execute($"UPDATE USUARIOS SET {obj.Name.Remove(obj.Name.Length - 1)} = '{toChange.Text}' WHERE ACTIVO = 1");
+            db.Execute(
+                $"UPDATE USUARIOS SET {obj.Name.Remove(obj.Name.Length - 1)} = @Value WHERE ACTIVO = 1",
+                new Dictionary<string, object> { { "Value", toChange.Text } }
+            );
 
-            MessageBox.Show($"Dato Actualizado Exitosamente", "Dato Actualizado", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            MessageBox.Show($"Dato Actualizado Exitosamente", "Dato Actualizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
