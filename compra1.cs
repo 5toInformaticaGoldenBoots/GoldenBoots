@@ -46,5 +46,10 @@ namespace GoldenBoots
             inicioForm.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Añadido al carrito con éxito.");
+        }
     }
 }

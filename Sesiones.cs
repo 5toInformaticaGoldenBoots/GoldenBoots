@@ -28,7 +28,7 @@ namespace GoldenBoots
         {
             Database db = new Database();
 
-            object[] data = db.QueryOne($"SELECT * FROM USUARIOS WHERE EMAIL = '{email.Text}'");
+            object[] data = db.SelectOne($"SELECT * FROM USUARIOS WHERE EMAIL = '{email.Text}'");
 
             if (data[4].ToString() == pass.Text)
             {
@@ -43,6 +43,11 @@ namespace GoldenBoots
 
             MessageBox.Show("La contraseña o el correo no están correctos", "Datos no encontrados",
                 MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RepeatFunctions.OpenForm(this, new Inicio());
         }
     }
 }

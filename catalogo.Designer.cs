@@ -489,9 +489,9 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(12, 173);
             label1.Name = "label1";
-            label1.Size = new Size(108, 15);
+            label1.Size = new Size(13, 15);
             label1.TabIndex = 1;
-            label1.Text = "Zapatos elegantes ";
+            label1.Text = "  ";
             // 
             // za1
             // 

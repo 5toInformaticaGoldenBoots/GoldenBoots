@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>GoldenBoots.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,10 +15,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="dsGoldenBoots.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsGoldenBoots.xsd</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="sdGoldenBoots1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>sdGoldenBoots1.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -26,6 +42,21 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="dsGoldenBoots.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGoldenBoots.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="sdGoldenBoots1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sdGoldenBoots1.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
